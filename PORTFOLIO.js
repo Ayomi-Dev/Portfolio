@@ -4,22 +4,7 @@ if(document.readyState == 'loading'){
 
 function ready () {
     // REVEALING SECTIONS ON PAGE SCROLL
-    window.addEventListener('scroll', function() { 
-        let reveals = document.querySelectorAll('.reveal'); //targeting all elements with the reveal class
     
-        for(let i=0; i < reveals.length; i++){ //looping through all the reveal element
-            let windowHeight = window.innerHeight;
-            let revealTop = reveals[i].getBoundingClientRect().top;
-            let revealPoint = 100;
-    
-            if(revealTop < windowHeight - revealPoint){
-                reveals[i].classList.add('active');
-            }
-            else{
-                reveals[i].classList.remove('active');
-            }
-        }
-    });
 
 
     // Revealing header text animation once page loads
@@ -29,11 +14,26 @@ function ready () {
         text.classList.add("active");
         }
     }
-
     list.forEach((item) => {
         item.addEventListener('click', activeList)
     });
 }
+window.addEventListener('scroll', function() { 
+    let reveals = document.querySelectorAll('.reveal'); //targeting all elements with the reveal class
+
+    for(let i=0; i < reveals.length; i++){ //looping through all the reveal element
+        let windowHeight = window.innerHeight;
+        let revealTop = reveals[i].getBoundingClientRect().top;
+        let revealPoint = 100;
+
+        if(revealTop < windowHeight - revealPoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+});
 
 
 // ACTIVE NAVIGATION MENU
