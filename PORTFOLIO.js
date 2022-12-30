@@ -1,43 +1,50 @@
-// REVEALING SECTIONS ON PAGE SCROLL
-window.addEventListener('scroll', function() {
-    let reveals = document.querySelectorAll('.reveal'); //targeting all elements with the reveal class
+if(document.readyState == 'loading'){
+    document.addEventListener('DOMContentLoaded', ready)
+}
 
-    for(let i=0; i < reveals.length; i++){ //looping through all the reveal element
-        let windowHeight = window.innerHeight;
-        let revealTop = reveals[i].getBoundingClientRect().top;
-        let revealPoint = 100;
+function ready () {
+    // REVEALING SECTIONS ON PAGE SCROLL
+    window.addEventListener('scroll', function() { 
+        let reveals = document.querySelectorAll('.reveal'); //targeting all elements with the reveal class
+    
+        for(let i=0; i < reveals.length; i++){ //looping through all the reveal element
+            let windowHeight = window.innerHeight;
+            let revealTop = reveals[i].getBoundingClientRect().top;
+            let revealPoint = 100;
+    
+            if(revealTop < windowHeight - revealPoint){
+                reveals[i].classList.add('active');
+            }
+            else{
+                reveals[i].classList.remove('active');
+            }
+        }
+    });
 
-        if(revealTop < windowHeight - revealPoint){
-            reveals[i].classList.add('active');
-        }
-        else{
-            reveals[i].classList.remove('active');
-        }
-    }
-});
-let texts = document.getElementsByTagName('h1');
-window.onload = function(){
-    for(text of texts){
+
+    // Revealing header text animation once page loads
+    let texts = document.getElementsByTagName('h1');
+    window.onload = function(){
+        for(text of texts){
         text.classList.add("active");
+        }
     }
+
+    list.forEach((item) => {
+        item.addEventListener('click', activeList)
+    });
 }
 
 
 // ACTIVE NAVIGATION MENU
 let list = document.querySelectorAll('.list');
 
-function activeList() {
+function activeList() { //function to add active class on each nav link
     list.forEach((item) => {
         item.classList.remove('active');
         this.classList.add('active');
-    })
+    });
 }
-list.forEach((item) => {
-    item.addEventListener('click', activeList)
-});
-
-
-
 
 // NAVIGATION MENU FOR SMALLER SCREEN
 
