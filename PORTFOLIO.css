@@ -16,11 +16,10 @@ section{
 .navigation{
     height: 80px;
     width: 100%;
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9));
     position: sticky;
     top: 0;
     z-index: 999;
-    /* overflow: hidden; */
 }
 @keyframes zoom-out{
     0%{
@@ -231,6 +230,13 @@ nav .menu li .list:hover::after{
         display: block;
         margin-top: 50px;
     }
+    .navigation{
+        height: 60px;
+    }
+    .logo a img{
+        height: 50px;
+        width: 50px;
+    }
     #header .text{
         top: 15%;
         left: 10%;
@@ -326,9 +332,10 @@ nav .menu li .list:hover::after{
 }
 .content2 img{
     transition: transform 0.5s;
+    height: 350px;
 }
 .content2:hover img{
-    transform: scale(1.1);
+    transform: scale(1.02);
     transition: 0.5s;
 }
 .content1 h1{
@@ -421,6 +428,9 @@ nav .menu li .list:hover::after{
     }
     .content1 p{
         font-size: small;
+    }
+    .content2 img{
+        display: none;
     }
 }
 
@@ -610,7 +620,6 @@ nav .menu li .list:hover::after{
     padding: 0 40px;
     justify-content: center;
     align-items: center;
-    text-align: center;
     overflow: hidden;
     transition: height 0.5s;
     left: 0;
@@ -623,13 +632,25 @@ nav .menu li .list:hover::after{
 .project-layer a{
     color: #FFF;
     font-size: 1.6rem;
-    margin-top: 20px;
+    margin: auto 0;
 }
 .project1:hover img{
     transform: scale(1.1);
 }
 .project1:hover .project-layer{
     height: 100%;
+}
+.project-layer .tools{
+    margin: 10px 0;
+    width: 100%
+}
+.project-layer .tools p{
+    color:bisque;
+    margin-bottom: 3px;
+}
+.project-layer .tools img{
+    width: 70px;
+    height: 30px;
 }
 .more{
     padding: 10px 20px;
@@ -647,6 +668,10 @@ nav .menu li .list:hover::after{
 @media screen and (max-width: 800px){
     .project-content{
         flex-direction: column;
+    }
+    .project-layer a{
+        /* margin: 0; */
+        font-size: 1.2rem;
     }
 }
 /* ------------------------CONTACT FORM-------------- */
@@ -721,7 +746,7 @@ nav .menu li .list:hover::after{
 .col-2 form button:hover{
     background: rgb(0, 255, 127);
 }
-.col-1 .file{
+.col-1 .file, .content2 .file{
     background: darkgreen;
     padding: 10px 20px;
     /* margin: 10px auto; */
@@ -729,7 +754,17 @@ nav .menu li .list:hover::after{
     border: 0;
     border-radius: 6px;
     cursor: pointer;
-    /* margin-top: 50px; */
+}
+.content2 .file{
+    margin: 10px auto;
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    transition: background 0.5s;
+}
+.content2 .file:hover, .col-1 .file:hover{
+    background:  rgb(0, 255, 127) ;
+    color: #fff;
 }
 #msg{
     color: rgb(0, 255, 127);
@@ -752,6 +787,10 @@ nav .menu li .list:hover::after{
     #msg{
         font-size: smaller;
     }
+    .content2 .file{
+    margin: 10px auto;
+    right: 10px;
+}
 }
 #footer{
     background: #141414;

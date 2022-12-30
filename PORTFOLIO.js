@@ -1,8 +1,8 @@
 // REVEALING SECTIONS ON PAGE SCROLL
 window.addEventListener('scroll', function() {
-    let reveals = document.querySelectorAll('.reveal');
+    let reveals = document.querySelectorAll('.reveal'); //targeting all elements with the reveal class
 
-    for(let i=0; i < reveals.length; i++){
+    for(let i=0; i < reveals.length; i++){ //looping through all the reveal element
         let windowHeight = window.innerHeight;
         let revealTop = reveals[i].getBoundingClientRect().top;
         let revealPoint = 100;
@@ -15,7 +15,13 @@ window.addEventListener('scroll', function() {
         }
     }
 });
- 
+let texts = document.getElementsByTagName('h1');
+window.onload = function(){
+    for(text of texts){
+        text.classList.add("active");
+    }
+}
+
 
 // ACTIVE NAVIGATION MENU
 let list = document.querySelectorAll('.list');
@@ -28,7 +34,7 @@ function activeList() {
 }
 list.forEach((item) => {
     item.addEventListener('click', activeList)
-})
+});
 
 
 
@@ -38,25 +44,20 @@ list.forEach((item) => {
 const mobile = document.querySelector('.mobile-menu');
 const menu = document.querySelector('.menu');
 
-mobile.addEventListener('click', function(){
+mobile.addEventListener('click', () => {
     mobile.classList.toggle('is-active');
     menu.classList.toggle('active');
 });
 
 // HEADER TEXT ANIMATION
 
-let texts = document.getElementsByTagName('h1');
-        window.onload = function(){
-            for(text of texts){
-                text.classList.add("active");
-            }
-        }
+
 
 let tabTitles = document.getElementsByClassName('tab-titles');
-let tabContents = document.getElementsByClassName('tab-contents');
+let tabContents = document.getElementsByClassName('tab-contents'); 
 
-// TAB DISPLAY FOR THE ABOUT SECTION 
-const openTab = (tabName) => {
+//TAB DISPLAY FOR THE ABOUT SECTION 
+const openTab = (tabName) => { //adding corresponding tab to their title
     for(tabTitle of tabTitles){
         tabTitle.classList.remove('active-link');
     }
@@ -72,13 +73,13 @@ const openTab = (tabName) => {
 let loadmore = document.getElementById('seeMore');
 let currentItem = 3;
 
-loadmore.onclick = () =>{
+loadmore.onclick = () =>{ 
     let boxes = [...document.querySelectorAll('.project1')];
-    for(let i = currentItem; i < currentItem + 3; i++){
+    for(let i = currentItem; i < currentItem + 3; i++){ //looping through all element containing project1
         boxes[i].style.display = 'inline-block'
     }
     currentItem += 3;
-    if(currentItem >= boxes.length){
+    if(currentItem >= boxes.length){  //condition for removing load more button
         loadmore.style.display = 'none';
     }
 }
