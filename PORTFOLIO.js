@@ -46,10 +46,6 @@ mobile.addEventListener('click', () => {
     menu.classList.toggle('active');
 });
 
-// HEADER TEXT ANIMATION
-
-
-
 let tabTitles = document.getElementsByClassName('tab-titles');
 let tabContents = document.getElementsByClassName('tab-contents'); 
 
