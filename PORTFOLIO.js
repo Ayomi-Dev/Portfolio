@@ -1,23 +1,4 @@
-if(document.readyState == 'loading'){
-    document.addEventListener('DOMContentLoaded', ready)
-}
-
-function ready () {
-    // REVEALING SECTIONS ON PAGE SCROLL
-    
-
-
-    // Revealing header text animation once page loads
-    let texts = document.getElementsByTagName('h1');
-    window.onload = function(){
-        for(text of texts){
-        text.classList.add("active");
-        }
-    }
-    list.forEach((item) => {
-        item.addEventListener('click', activeList)
-    });
-}
+// REVEALING SECTIONS ON PAGE SCROLL
 window.addEventListener('scroll', function() { 
     let reveals = document.querySelectorAll('.reveal'); //targeting all elements with the reveal class
 
@@ -34,8 +15,14 @@ window.addEventListener('scroll', function() {
         }
     }
 });
-
-
+ // Revealing header text animation once page loads
+ let texts = document.getElementsByTagName('h1');
+ window.onload = function(){
+     for(text of texts){
+     text.classList.add("active");
+     }
+ }
+ 
 // ACTIVE NAVIGATION MENU
 let list = document.querySelectorAll('.list');
 
@@ -45,6 +32,9 @@ function activeList() { //function to add active class on each nav link
         this.classList.add('active');
     });
 }
+list.forEach((item) => {
+    item.addEventListener('click', activeList)
+});
 
 // NAVIGATION MENU FOR SMALLER SCREEN
 
