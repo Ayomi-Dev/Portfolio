@@ -14,7 +14,7 @@
 form .inpWrap input{
     color: #fff;
     border-radius: 10px;
-    border: 1px solid rgb(0,63, 45);
+    border: 1px solid lightgreen;
     height: 35px;
     margin: 10px 0;
     background: none;
@@ -43,7 +43,7 @@ form .inpWrap:nth-child(1) label{
     padding: 0 5px;
     transition: top .5s;
     cursor: text;
-    background-color: #000000;
+    background-color: #1b2736;
     margin: 0 15px;
 }
 form .inpWrap:nth-child(2) label{
@@ -56,7 +56,7 @@ form .inpWrap:nth-child(2) label{
     padding: 0 5px;
     transition: top .5s;
     cursor: text;
-    background-color: #000000;
+    background-color: #1b2736;
     margin: 0 15px;
 }
 form .inpWrap:nth-child(3) label{
@@ -69,7 +69,7 @@ form .inpWrap:nth-child(3) label{
     padding: 0 5px;
     transition: top .5s;
     cursor: text;
-    background-color: #000000;
+    background-color: #1b2736;
     margin: 0 10px;
 }
 form .inpWrap:nth-child(1) input:focus-within ~ label,
@@ -99,11 +99,10 @@ form .inpWrap:nth-child(3) textarea:valid ~ label{
     font-size: smaller;
 }
 form div textarea{
-    /* height: 100%; */
     width: 100%;
     border-radius: 10px;
     margin: 10px 0;
-    border: 1px solid rgb(0,63, 45);
+    border: 1px solid lightgreen;
     outline: none;
     padding: 10px 10px;
     background: none;

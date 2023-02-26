@@ -1,20 +1,27 @@
-// REVEALING SECTIONS ON PAGE SCROLL
-window.addEventListener('scroll', function() { 
-    let reveals = document.querySelectorAll('.reveal'); //targeting all elements with the reveal class
+// // REVEALING SECTIONS ON PAGE SCROLL
+// window.addEventListener('scroll', function() { 
+//     let reveals = document.querySelectorAll('.reveal'); //targeting all elements with the reveal class
 
-    for(let i=0; i < reveals.length; i++){ //looping through all the reveal element
-        let windowHeight = window.innerHeight;
-        let revealTop = reveals[i].getBoundingClientRect().top;
-        let revealPoint = 100;
+//     for(let i=0; i < reveals.length; i++){ //looping through all the reveal element
+//         let windowHeight = window.innerHeight;
+//         let revealTop = reveals[i].getBoundingClientRect().top;
+//         let revealPoint = 100;
 
-        if(revealTop < windowHeight - revealPoint){
-            reveals[i].classList.add('active');
-        }
-        else{
-            reveals[i].classList.remove('active');
-        }
-    }
-});
+//         if(revealTop < windowHeight - revealPoint){
+//             reveals[i].classList.add('active');
+//         }
+//         else{
+//             reveals[i].classList.remove('active');
+//         }
+//     }
+// });
+
+
+
+
+
+
+
  // Revealing header text animation once page loads
  let texts = document.getElementsByTagName('h1');
  window.onload = function(){
@@ -76,3 +83,16 @@ loadmore.onclick = () =>{
         loadmore.style.display = 'none';
     }
 }
+ScrollReveal({
+    reset: true,
+    distance: '60px',
+    duration: 2500,
+    delay: 200
+
+});
+ScrollReveal().reveal('.content1 h1, .project-container h2, .project1.two, .service1.one, .service1.three',
+ { delay: 400, origin: 'left' });
+ScrollReveal().reveal('.content1 .tab-titles, .col-2', { delay: 500, origin: 'bottom', interval: 200 });
+ScrollReveal().reveal('.content1 .p1, .content2, .project1.one, .project1.three, .service1.two, .service1.four',
+ { delay: 600, origin: 'right'});
+ScrollReveal().reveal('.service-title, .col-1', { delay: 500, origin: 'top' });

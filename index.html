@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="PORTFOLIO.css">
     <link rel="stylesheet" href="form.css">
     <script src="https://kit.fontawesome.com/5dd300959c.js" crossorigin="anonymous"></script>
-    <script src="PORTFOLIO.js" async></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="PORTFOLIO.js" defer></script>
 </head>
 <body>
     <section class="navigation">
         <nav>
             <div class="logo">
-                <h3><a href="#header"><img src="logo.jpg" alt=""></a></h3>
+                <h3><a href="#header">AYO</a></h3>
             </div>
             <ul class="menu">
                 <li><a class="list active" href="#header">Home</a></li>
@@ -45,11 +46,11 @@
         <div class="about-content reveal">
             <div class="content1">
                 <h1>About Me</h1>
-                <p> I am a self motivated frontend web developer, passionate about creating and building solutions
+                <p class="p1"> I am a self motivated frontend web developer, passionate about creating and building solutions
                     to improve usability and functionalities of websites. A growth-minded developer,
-                    with amazing <a href="#projects">projects</a> under my belt, I am always excited to
-                    work on great concepts where I can leverage and expand on my current skill set, while also
-                    developing my career and contributing to greater success.
+                    with amazing <a href="#projects">projects</a> in my Portfolio, I am always excited to collaborate
+                    and work on great concepts where I can leverage and expand on my current skill set, while also
+                    contributing to achieving great results.
                 </p>
                 <div class="tabs">
                     <p class="tab-titles active-link" onclick="openTab('skills')">Skills</p>
@@ -85,7 +86,6 @@
                 </div>
             </div>
             <div class="content2">
-                <img src="pic.png" alt="">
                 <a href="AYOMIDE OLAKUNLE ABIOLA.pdf" class="file" download>Download CV</a>
             </div>            
         </div>
@@ -95,14 +95,14 @@
         <div class="service-container reveal">
             <h1 class="service-title">My Services</h1>
             <div class="service-content">
-                <div class="service1">
+                <div class="service1 one">
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Development</h2>
                     <p>With simplicity as one of my core values, I create simple but elegant 
                         web pages with the aim to satisfy the project's purpose.
                     </p>
                 </div>
-                <div class="service1">
+                <div class="service1 two">
                     <i class="fa fa-mobile"></i>
                     <h2>Responsive Web Design</h2>
                     <p>For great and easy experience on the web, I make web pages with amazing layouts
@@ -110,7 +110,7 @@
                         screen size of mobile devices and fully functional across different browsers.
                     </p>
                 </div>
-                <div class="service1">
+                <div class="service1 three">
                     <i class="fa fa-palette"></i>
                     <h2>Creative Design</h2>
                     <p>In order to create eye-catching web experiences for users, I use different patterns 
@@ -118,7 +118,7 @@
                         and user preferences.
                     </p>
                 </div>
-                <div class="service1">
+                <div class="service1 four">
                     <i class="fa fa-globe"></i>
                     <h2>SEO</h2>
                     <p>As much as it is important to develop interactive websites, it is also important to 
@@ -132,7 +132,22 @@
         <div class="project-container reveal">
             <h2>Featured Projects</h2>
             <div class="project-content">
-                <div class="project1">
+                <div class="project1 one">
+                    <img src="food.png" alt="">
+                    <div class="project-layer">
+                        <h3>Food Website</h3>
+                        <p>A food delivery website with fully effective cart
+                            page. Users can add food of their choice and select number of quantities
+                            of each selected item.
+                        </p>
+                        <div class="tools">
+                            <p>Tool</p>
+                            <img src="java.jpeg" alt="">
+                        </div>
+                        <a target='_blank' href="https://music-ayo.netlify.app/"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project1 two">
                     <img src="app.png" alt="">
                     <div class="project-layer">
                         <h3>Music App</h3>
@@ -147,6 +162,20 @@
                         <a target='_blank' href="https://music-ayo.netlify.app/"><i class="fas fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
+                <div class="project1 three">
+                    <img src="editor.png" alt="">
+                    <div class="project-layer">
+                        <h3>Image editor App</h3>
+                        <p>A web application that allows users to edit images with different
+                            filter options and downloading it in one click.
+                        </p>
+                        <div class="tools">
+                            <p>Tool</p>
+                            <img src="java.jpeg" alt="">
+                        </div>
+                        <a target='_blank' href="https://ayo-editor.netlify.app"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
                 <div class="project1">
                     <img src="gallery~2.png" alt="">
                     <div class="project-layer">
@@ -159,20 +188,6 @@
                             <img src="java.jpeg" alt="">
                         </div>
                         <a target='_blank' href="https://ayo-gallery.netlify.app/"><i class="fas fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="project1">
-                    <img src="editor.png" alt="">
-                    <div class="project-layer">
-                        <h3>Image editor App</h3>
-                        <p>A web application that allows users to edit images with different
-                            filter options and downloading it in one click.
-                        </p>
-                        <div class="tools">
-                            <p>Tool</p>
-                            <img src="java.jpeg" alt="">
-                        </div>
-                        <a target='_blank' href="https://ayo-editor.netlify.app"><i class="fas fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="project1">
@@ -201,21 +216,7 @@
                         </div>
                         <a target='_blank' href=""><i class="fas fa-arrow-up-right-from-square"></i></a>
                     </div>
-                </div>
-                <div class="project1">
-                    <img src="survey.png" alt="">
-                    <div class="project-layer">
-                        <h3>Sign up Page</h3>
-                        <p>Sign up page for users with easier options, to connect to a website.
-                        </p>
-                        <div class="tools">
-                            <p>Tool</p>
-                            <img src="java.jpeg" alt="">
-                        </div>
-                        <a target='_blank' href=""><i class="fas fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                </div>
+
             </div>
         </div>
         <div class="more">
