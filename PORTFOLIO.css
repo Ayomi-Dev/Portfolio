@@ -271,7 +271,7 @@ nav .menu li .list:hover::after{
     background-position: center;
     background-size: center;
     background-attachment: fixed;
-    
+    overflow: hidden;
 }
 .about-content{
     display: flex;
@@ -561,6 +561,7 @@ nav .menu li .list:hover::after{
     width: 100%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 .project-container{
     width: 95%;
@@ -734,6 +735,7 @@ nav .menu li .list:hover::after{
     align-items: center;
     background: #1b2736;
     width: 100%;
+    overflow: hidden;
 }
 .contact-box{
     padding: 20px 30px;
