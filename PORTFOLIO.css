@@ -360,13 +360,44 @@ nav .menu li .list:hover::after{
     font-size: 15px;
     color: rgb(0, 255, 127);
 }
-.tab-contents ul{
-    list-style: none;
-    transition: 0.5s;
-}
 .tab-contents ul li{
-    padding: 5px 0;
+    padding: 5px 10px;
     font-size: 13px;
+}
+.tab-contents.one ul li{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.progress{
+    width: 50%;
+    height: 5px;
+    border: 1px solid rgba(0, 255, 127, .2) ;
+    position: relative;
+    border-radius: 5px;
+}
+.range{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgb(0, 255, 127);
+}
+.range.one{
+    width: 90%;
+}
+.range.two{
+    width: 80%;
+}
+.range.three{
+    width: 80%;
+}
+.range.four{
+    width: 70%;
+}
+.range.five{
+    width: 80%;
 }
 .tab-contents ul li span{
     color: lightgreen;
@@ -651,16 +682,26 @@ nav .menu li .list:hover::after{
 }
 .project-layer .tools{
     margin: 5px 0;
-    width: 100%
+    width: 100%;
 }
 .project-layer .tools p{
     color:bisque;
     margin-bottom: 5px;
 }
 .project-layer .tools img{
-    width: 70px;
+    width: 30px;
     height: 30px;
+    display: flex;
+    position: relative;
+    margin: 5px;
 }
+.tool-img{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
+}
+
 .more{
     width: 100%;
     display: flex;
