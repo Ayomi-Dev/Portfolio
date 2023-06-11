@@ -319,7 +319,7 @@ nav .menu li .list:hover::after{
     width: 17%;
     height: 2px;
     position: absolute;
-    left: 14%;
+    left: 17%;
     top: 13px;
     background: rgb(0, 255, 234);
 }
@@ -436,6 +436,7 @@ nav .menu li .list:hover::after{
     }
     .content h1::after{
         top: 8px;
+        
     }
     .content1 p{
         font-size: small;
@@ -470,7 +471,7 @@ nav .menu li .list:hover::after{
     width: 120px;
     height: 2px;
     position: absolute;
-    right: 70%;
+    right: 60%;
     top: 14px;
 }
 .service-content{
@@ -621,7 +622,7 @@ nav .menu li .list:hover::after{
     width: 120px;
     height: 2px;
     position: absolute;
-    right: 60%;
+    right: 55%;
     top: 14px;
 }
 .project-content{
