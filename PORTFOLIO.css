@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,100;1,200;1,500&family=Poppins:ital,wght@0,200;1,200&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -37,8 +39,10 @@ nav{
 }
 .logo h3 a{
     font-size: 1.8rem;
-    color: rgb(0, 255, 127);
+    color: rgb(0, 255, 234);
     font-weight: 800px;
+    padding: 5px 10px;
+    box-shadow: 0 0 3px rgb(0, 255, 234);
 }
 .logo a span{
     color:  rgb(0, 255, 127);;
@@ -63,7 +67,7 @@ nav .menu li .list{
     transition: color .5s;
 }
 nav .menu li .list.active {
-    color:  rgb(0, 255, 127);
+    color:  rgb(0, 255, 234);
 }
 nav .menu li .list::after{
     content: '';
@@ -71,9 +75,9 @@ nav .menu li .list::after{
     width: 0;
     height: 2px;
     position: absolute;
-    background: green;
+    background: rgb(0, 255, 234);
     bottom: -2px;
-    transition: 0.5s ease;
+    transition: 0.2s ease;
 }
 nav .menu li .list:hover::after{
     width: 100%;
@@ -104,7 +108,7 @@ nav .menu li .list:hover::after{
 #header .text h1{
     transform: translateY(120px);
     opacity: 0;
-    transition: transform 1s, opacity 0.5s;
+    transition: transform 1s, opacity 1s;
 }
 #header .text h1.active{
     transform: translateY(-50px);
@@ -117,7 +121,7 @@ nav .menu li .list:hover::after{
 }
 #header .text h1:nth-child(1){
     padding-bottom: 20px;
-    color: rgb(0, 255, 127);
+    color: rgb(0, 255, 234);
     font-size: 2.5rem;
 }
 #header .text h1:nth-child(2){
@@ -138,7 +142,7 @@ nav .menu li .list:hover::after{
 #header .text h1:nth-child(3) span{
     color: transparent;
     font-weight: bolder;
-    background-image: linear-gradient(#fff 30%,  rgb(0, 255, 127)70%);
+    background-image: linear-gradient(#fff 30%, rgb(0, 255, 234) 70%);
     background-repeat: repeat-x;
     -webkit-background-clip: text;
     background-position: -300px 0px ;
@@ -149,7 +153,7 @@ nav .menu li .list:hover::after{
 #header .text h1:nth-child(4) span{
     color: transparent;
     font-weight: bolder;
-    background-image: linear-gradient(rgb(0, 255, 127), rgb(0, 255, 127));
+    background-image: linear-gradient(rgb(0, 255, 234), rgb(0, 255, 234));
     background-repeat: repeat;
     -webkit-background-clip: text;
     background-position: -700px 0px ;
@@ -317,20 +321,20 @@ nav .menu li .list:hover::after{
     position: absolute;
     left: 14%;
     top: 13px;
-    background: rgb(0, 255, 127);
+    background: rgb(0, 255, 234);
 }
 .content1 p{
     margin-top: 20px;
 }
 .content1 p a{
-    color: lightgreen;
+    color: rgb(0, 255, 234);
 }
 .tabs{
     display: flex;
     margin: 10px 0 40px;
 }
 .tab-titles{
-    color: lightgreen;
+    color: rgb(0, 255, 234);
     font-size: 1.2rem;
     position: relative;
     font-weight: bolder;
@@ -341,14 +345,14 @@ nav .menu li .list:hover::after{
     content: '';
     width: 0% ;
     height: 2px;
-    background:rgb(0, 255, 127);
+    background: rgb(0, 255, 234);
     position: absolute;
     left:0;
     bottom: -4px;
     transition: 0.5s;
 }
 .tab-titles.active-link::after{
-    width: 50%;
+    width: 70%;
 }
 .tab-contents{
     display: none;
@@ -358,7 +362,7 @@ nav .menu li .list:hover::after{
     color: #fff;
     margin: 10px 0;
     font-size: 15px;
-    color: rgb(0, 255, 127);
+    color: rgb(0, 255, 234);
 }
 .tab-contents ul li{
     padding: 5px 10px;
@@ -369,6 +373,7 @@ nav .menu li .list:hover::after{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 .progress{
     width: 50%;
@@ -382,7 +387,7 @@ nav .menu li .list:hover::after{
     width: 100%;
     height: 100%;
     position: absolute;
-    background: rgb(0, 255, 127);
+    background: rgb(0, 255, 234);
 }
 .range.one{
     width: 90%;
@@ -400,7 +405,7 @@ nav .menu li .list:hover::after{
     width: 80%;
 }
 .tab-contents ul li span{
-    color: lightgreen;
+    color:rgb(0, 255, 234);
     margin-right: 5px;
     font-weight: bolder;
 }
@@ -417,13 +422,20 @@ nav .menu li .list:hover::after{
     .content1, .content2{
         flex-basis: 100%;
     }
+    .tab-contents.one ul li{
+        width: 100%;
+        margin: 5px 0;
+    }
     .tab-titles{
         margin-right: 20px;
         font-size: 1rem;
     }
     .content1 h1{
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-align: center;
+    }
+    .content h1::after{
+        top: 8px;
     }
     .content1 p{
         font-size: small;
@@ -453,68 +465,77 @@ nav .menu li .list:hover::after{
     position: relative;
 }
 .service-container  h1::after{
-    background: rgb(0, 255, 127);
+    background: rgb(0, 255, 234);
     content: '';
-    width: 100px;
+    width: 120px;
     height: 2px;
     position: absolute;
-    left: 180px;
-    top: 13px;
+    right: 70%;
+    top: 14px;
 }
 .service-content{
-    display: flex;
-    justify-content: center;
-    color: #fff;
-    margin: 10px auto;
     width: 100%;
+    display:flex; flex-wrap: wrap;
+    justify-content: center; align-items: center;
+    color: #fff;
+    margin: 0px auto;
+    margin-top: 20px;
+    gap: 15px;
 }
 .service1{
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
     border-radius: 10px;
-    transition: transform 0.5s, border 0.5s;
+    transition: transform 0.3s, border 0.3s;
     position: relative;
-    height: 280px;
-    width: 200px;
     text-align: center;
-    overflow: hidden;
-    margin: 10px auto;
+    width: 45%;
+    height: 280px;
     padding: 15px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
 }
-.service1::before{
-    content: '';
-    height:0;
-    width: 0;
-    top:0;
+.service-front, .service-back{
+    display: flex;
+    align-items: center; justify-content: center;
+    position: absolute;
+    top: 0; 
     left: 0;
-    position: absolute;
-    border-bottom: 1px solid darkgreen;
-    border-left: 1px solid darkgreen;
-    transition: .5s ease;
-    border-radius: 10px;
-    opacity: 0;
-}
-.service1::after{
-    content: '';
-    width: 0;
-    height: 0;
-    top:0;
-    right: 0;
-    position: absolute;
-    border-top: 1px solid greenyellow;
-    border-right: 1px solid greenyellow;
-    transition: .5s ease;
-    border-radius: 10px;
-    opacity: 0;
-}
-.service1:hover::before{
-    width: 100%;
+    width: 100%; 
     height: 100%;
-    opacity: 1;
+    padding: 20px; 
+    box-sizing: border-box;
+    box-shadow:  3px 3px 5px rgb(0, 255, 234);
+    border-radius: 10px;
+    backface-visibility: hidden;
+    transition: all .3s;
 }
-.service1:hover::after{
-    width: 100%;
-    height: 100%;
-    opacity: 1;
+.service1 a{
+    margin-top: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color:#fff;
+    background: rgba(0, 255, 234, .3);
+}
+.service-front{
+    flex-direction: column;
+    transform: rotateY(0deg);
+    z-index: 2;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+}
+.service-back{
+    background: #1b2736;
+    flex-direction: column;
+    transform: rotateY(180deg);
+    font-weight: 700;
+    z-index: 999;
+}
+.service-back p{
+    color: #fff;
+}
+.service1:hover .service-front{
+    transform: rotateY(-180deg);
+}
+.service1:hover .service-back{
+    transform: rotateY(0deg);
 }
 .service1 h2{
     font-size: 16px;
@@ -522,50 +543,36 @@ nav .menu li .list:hover::after{
     color: #fff;
     font-weight: bolder;
 }
-.service1 p{
+.service-front p{
     font-size: smaller;
     letter-spacing: 1px;
-    color: rgb(0, 255, 127);
+    color: rgb(0, 255, 234);
 }
 .service1 i{
     margin-bottom: 10px;
     font-size: 1.5rem;
     color: #fff;
 }
-.service1:hover{
-    transform: translateY(-10px);
-    transition:  0.5s ease;
-}
+
 /* SERVICE STYLING FOR SMALLER SCREENS */
 @media screen and (max-width: 800px) {
-    .service-content{
-        flex-wrap: wrap;
-    }
-    .service1{
-        width: 40%;
-    }
     .service-container  h1{
-        padding: 10px;
+       text-align: center;
     }
-    .service-container  h1::after{
-        top: 23px;
-    }
+    
 }
 @media screen and (max-width: 620px){
     .service-container  h1::after{
         width: 80px;
+        top: 9px;
+        right: 70%
     }
-}
-@media screen and (max-width: 500px){
-    #services{
-        height: unset;
+    .service-content{
+        width: 95%;
+        margin: 10px auto;
     }
     .service-container  h1{
-        padding: 10px;
-    }
-    .service-container  h1::after{
-        top: 23px;
-        width: 80px;
+        font-size: 1rem;
     }
     .service1 h2{
         font-size: 16px;
@@ -573,17 +580,14 @@ nav .menu li .list:hover::after{
     .service1 p{
         font-size: 14px;
     }
-    .service-title{
-        font-size: 1.5rem;
-    }
-    .service-content{
-        flex-direction: column;
-        justify-content: center;
-    }
     .service1{
-        width: 80%;
+        width: 90%;
+    }
+    .service1 a{
+        font-size: .8rem;
     }
 }
+
 @media screen and (max-width: 300px){
     .service-container  h1::after{
         width: 60px;
@@ -606,19 +610,19 @@ nav .menu li .list:hover::after{
     width: 95%;
     margin: 0 auto;
 }
-.project-container h2{
+.project-container h1{
     position: relative;
     color: #fff;
     margin: 10px 0;
 }
-.project-container  h2::after{
-    background: rgb(0, 255, 127);
+.project-container  h1::after{
+    background: rgb(0, 255, 234);
     content: '';
     width: 120px;
     height: 2px;
     position: absolute;
-    left: 220px;
-    top: 13px;
+    right: 60%;
+    top: 14px;
 }
 .project-content{
     display: flex;
@@ -631,7 +635,7 @@ nav .menu li .list:hover::after{
     height: 180px;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 0px 5px 0 #141414;
+    box-shadow: 0 0px 5px  #141414;
     display: none;
     margin: 10px 10px;
 }
@@ -745,20 +749,24 @@ nav .menu li .list:hover::after{
     .project1:nth-child(4){
         display: none;
     }
+    .project-container  h1::after{
+        right: 45%;
+    }
 }
-@media screen and (max-width: 540px){
+@media screen and (max-width: 600px){
     .project-content{
         width: 80%;
     }
     .project1{
         width: 100%;
     }
-    .project-container h2{
+    .project-container h1{
         text-align: center;
+        font-size: 1rem;
     }
-    .project-container h2::after{
-        width: 80px;
-        left: 0;
+    .project-container h1::after{
+        right: 75%;
+        top: 8px;
     }
 }
 @media screen and (max-width: 500px){
@@ -769,12 +777,15 @@ nav .menu li .list:hover::after{
     .project1{
         width: 100%;
     }
-    .project-container h2{
-        text-align: center;
+    .project-container h1::after{
+        width: 70px;
+        right: 80%;
     }
-    .project-container h2::after{
+}
+@media screen and (max-width: 360px) {
+    .project-container h1::after{
         width: 50px;
-        top: 13px;
+        right: 85%;
     }
 }
 /* ------------------------CONTACT FORM-------------- */
@@ -808,7 +819,7 @@ nav .menu li .list:hover::after{
 }
 .col-1 h2{
     margin-bottom: 10px;
-    color: rgb(0, 255, 127);
+    color: rgb(0, 255, 234);
 }
 .col-1 p {
     margin: 5px 0;
@@ -819,7 +830,7 @@ nav .menu li .list:hover::after{
 }
 .col-1 a i, .col-1 p i{
     margin-right: 10px;
-    color: rgb(0, 255, 127);
+    color: rgb(0, 255, 234);
 }
 
 .col-1 .socials a{
@@ -829,14 +840,14 @@ nav .menu li .list:hover::after{
     font-size: 1.3rem;
 }
 .col-1 .socials a:hover, .col-1 .file:hover{
-    color: rgba(0, 255, 128, 0.726);
+    color:rgba(0, 255, 234, .8);
     transition: 0.5s;
 }
 .col-2{
     flex-basis: 60%;
 }
 .col-2 form button{
-    background: rgb(0, 255, 127);
+    background: rgb(0, 255, 234, .3);
     padding: 10px 20px;
     margin: 2px auto;
     color: #fff;
@@ -846,10 +857,10 @@ nav .menu li .list:hover::after{
     transition: 0.5s;
 }
 .col-2 form button:hover{
-    background: rgb(0, 255, 234);
+    background: rgb(0, 255, 234, .6);
 }
 .col-1 .file, .content2 .file{
-    background: rgb(0, 255, 127);
+    background:  rgba(0, 255, 234, .3);
     padding: 10px 20px;
     color: #fff;
     border: 0;
@@ -861,11 +872,11 @@ nav .menu li .list:hover::after{
     transition: background 0.5s;
 }
 .content2 .file:hover, .col-1 .file:hover{
-    background:  rgb(0, 255, 127) ;
+    background:  rgba(0, 255, 234, .6) ;
     color: #fff;
 }
 #msg{
-    color: rgb(0, 255, 127);
+    color: rgb(0, 255, 234);
     margin-top: -30px;
     font-size: 13px;
 }
@@ -902,7 +913,7 @@ nav .menu li .list:hover::after{
     color: #fff;
 }
 .footer-container span{
-    color:rgb(0, 255, 127);
+    color: rgb(0, 255, 234);
     font-size: 1.3rem;
     font-family: 'Times New Roman', Times, serif;
 }

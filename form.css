@@ -14,7 +14,7 @@
 form .inpWrap input{
     color: #fff;
     border-radius: 10px;
-    border: 1px solid lightgreen;
+    border: 1px solid rgba(0, 255, 234, .3);
     height: 35px;
     margin: 10px 0;
     background: none;
@@ -27,11 +27,9 @@ form .inpWrap input{
     font-family: inherit;
     padding: 0 10px;
 }
-form input:hover, form textarea:hover{
-    border: 1px solid rgb(0, 65, 0);
-}
+
 form input:focus, form textarea:focus{
-    border: 1px solid rgb(0, 255, 127);
+    border: 1px solid rgb(0, 255, 234);
 }
 form .inpWrap:nth-child(1) label{
     color:#fff;
@@ -78,7 +76,7 @@ form .inpWrap:nth-child(1) input:valid ~ label
     top: 5px;
     left: 0;
     margin: 0 15px;
-    color: rgb(0, 255, 127);
+    color: rgb(0, 255, 234);
     font-size: smaller;
 }
 form .inpWrap:nth-child(2) input:focus-within ~ label,
@@ -87,7 +85,7 @@ form .inpWrap:nth-child(2) input:valid ~ label
     top: 58px;
     left: 0;
     margin: 0 15px;
-    color: rgb(0, 255, 127);
+    color: rgb(0, 255, 234);
     font-size: smaller;
 }
 form .inpWrap:nth-child(3) textarea:focus-within ~ label,
@@ -95,14 +93,14 @@ form .inpWrap:nth-child(3) textarea:valid ~ label{
     top: 115px;
     left: 0;
     margin: 0 15px;
-    color: rgb(0, 255, 127);
+    color: rgb(0, 255, 234);
     font-size: smaller;
 }
 form div textarea{
     width: 100%;
     border-radius: 10px;
     margin: 10px 0;
-    border: 1px solid lightgreen;
+    border: 1px solid rgba(0, 255, 234, .3);
     outline: none;
     padding: 10px 10px;
     background: none;

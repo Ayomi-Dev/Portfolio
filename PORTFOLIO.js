@@ -84,15 +84,15 @@ loadmore.onclick = () =>{
     }
 }
 ScrollReveal({
-    reset: true,
+    reset: false,
     distance: '60px',
     duration: 2500,
     delay: 200
 
 });
 ScrollReveal().reveal('.content1 h1, .project-container h2, .project1.two, .service1.one, .service1.three',
- { delay: 400, origin: 'left' });
-ScrollReveal().reveal('.content1 .tab-titles, .col-2', { delay: 500, origin: 'bottom', interval: 200 });
+ { delay: 200, origin: 'left' });
+ScrollReveal().reveal('.content1 .tab-titles, .col-2', { delay: 300, origin: 'bottom', interval: 200 });
 ScrollReveal().reveal('.content1 .p1, .content2, .project1.one, .project1.three, .service1.two, .service1.four',
- { delay: 600, origin: 'right'});
-ScrollReveal().reveal('.service-title, .col-1', { delay: 500, origin: 'top' });
+ { delay: 300, origin: 'right'});
+ScrollReveal().reveal('.service-title, .col-1', { delay: 300, origin: 'top' });

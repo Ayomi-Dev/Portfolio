@@ -8,7 +8,8 @@
     <title>Frontend web developer Portfolio</title>
     <link rel="stylesheet" href="PORTFOLIO.css">
     <link rel="stylesheet" href="form.css">
-    <script src="https://kit.fontawesome.com/5dd300959c.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/5dd300959c.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="PORTFOLIO.js" defer></script>
 </head>
@@ -89,6 +90,7 @@
                                 <div class="range five"></div>
                             </div>
                         </li>
+
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
@@ -111,41 +113,72 @@
             <h1 class="service-title">My Services</h1>
             <div class="service-content">
                 <div class="service1 one">
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Development</h2>
-                    <p>With excellence as one of my core values, I develop simple but elegant and functional 
-                        web applications with the aim to satisfy and improve user experience.
-                    </p>
+                    <div class="service-front">
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p style="font-style: .7rem">See more...</p>
+                    </div>
+                    <div class="service-back">
+                        <p>With excellence as one of my core values, I develop simple but elegant and functional 
+                            web applications with the aim to satisfy and improve user experience.
+                        </p>
+                        <a href="#contact">Contact Me</a>
+                    </div> 
                 </div>
+
                 <div class="service1 two">
-                    <i class="fa fa-mobile"></i>
-                    <h2>Responsive Web Design</h2>
-                    <p>For great and easy experience on the web, I make web pages with amazing layouts
-                        and designs that are easily accessible and fit in to any 
-                        screen size of mobile devices and fully functional across different browsers.
-                    </p>
+                    <div class="service-front">
+                        <i class="fa fa-mobile"></i>
+                        <h2>Responsive Web Design</h2>
+                        <p>See more...</p>
+                    </div>
+                    <div class="service-back">
+                        <p>For great and easy experience on the web, I make web pages with amazing layouts
+                            and designs that are easily accessible and fit in to any 
+                            screen size of mobile devices and fully functional across different browsers.
+                        </p>
+                        <a href="#contact">Contact Me</a>
+                    </div>
+                    
+                    
                 </div>
                 <div class="service1 three">
-                    <i class="fa fa-palette"></i>
-                    <h2>Creative Design</h2>
-                    <p>In order to create eye-catching web experiences for users, I use different patterns 
-                        such as animations using CSS nd JavaScript with the goal of accessibility 
-                        and user preferences.
-                    </p>
+                    <div class="service-front">
+                        <i class="fa fa-palette"></i>
+                        <h2>Creative Design</h2>
+                        <p>See more...</p>
+                    </div>
+                    <div class="service-back">
+                        <p>In order to create eye-catching web experiences for users, I use different patterns 
+                            such as animations using CSS nd JavaScript with the goal of accessibility 
+                            and user preferences.
+                        </p>
+                        <a href="#contact">Contact Me</a>
+                    </div>
+                    
+                   
                 </div>
                 <div class="service1 four">
-                    <i class="fa fa-globe"></i>
-                    <h2>SEO</h2>
-                    <p>As much as it is important to develop interactive websites, it is also important to 
-                        ensure they find their target audience. With my SEO skillset, I help give webs great positional 
-                        advantage on the internet to be easily discovered by its needers.
-                    </p>
+                    <div class="service-front">
+                        <i class="fa fa-globe"></i>
+                        <h2>SEO</h2>
+                        <p>See more...</p>
+                    </div>
+                    <div class="service-back">
+                        <p>As much as it is important to develop interactive websites, it is also important to 
+                            ensure they find their target audience. With my SEO skillset, I help give webs great positional 
+                            advantage on the internet to be easily discovered by its needers.
+                        </p>
+                        <a href="#contact">Contact Me</a>
+                    </div>
+                    
+                   
                 </div>
     </section>
 <!-- ------------PROJECT SECTION------------- -->
     <section id="projects">
         <div class="project-container reveal">
-            <h2>Featured Projects</h2>
+            <h1>Featured Projects</h1>
             <div class="project-content">
                 <div class="project1 one">
                     <img src="sing.png" alt="">
@@ -294,7 +327,8 @@
     <section id="footer">
         <div class="footer-container">
             <p>Copyrights <i class="fas fa-copyright"></i> <span>Ayomide</span> 2023.
-                 All Rights Reserved.</p>
+                All Rights Reserved.
+            </p>
         </div>
     </section>
 
