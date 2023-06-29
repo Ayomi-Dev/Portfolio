@@ -90,7 +90,7 @@ nav .menu li .list:hover::after{
 }
 #header{
     width: 100%;
-    height: 500px;
+    height: 100vh;
     background: #1b2736;
     position: relative;
     overflow: hidden;
@@ -611,7 +611,7 @@ nav .menu li .list:hover::after{
     overflow: hidden;
 }
 .project-container{
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
 }
 .project-container h1{
@@ -650,9 +650,9 @@ nav .menu li .list:hover::after{
 .project1 img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
     position: absolute;
     transition: transform 0.5s;
-    /* object-fit: contain; */
 }
 .project-layer{
     position: absolute;
@@ -709,7 +709,6 @@ nav .menu li .list:hover::after{
     width: 100px;
     height: 50px;
 }
-
 .more{
     width: 100%;
     display: flex;
@@ -759,7 +758,7 @@ nav .menu li .list:hover::after{
 }
 @media screen and (max-width: 600px){
     .project-content{
-        width: 80%;
+        width: 95%;
     }
     .project1{
         width: 100%;
