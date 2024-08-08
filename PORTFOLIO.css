@@ -12,6 +12,7 @@ html{
 }
 body{
     min-height: 100vh;
+    width: 100%;
 }
 section{
     display: flex;
@@ -296,14 +297,17 @@ nav .menu li .list:hover::after{
 }
 .about-content{
     display: flex;
-    padding: 20px 60px;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 90%;
+    margin: 10px auto;
+    
 }
 .content1{
     width: 100%;
+    margin: 10px auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -338,7 +342,7 @@ nav .menu li .list:hover::after{
 }
 .tab-titles{
     color: rgb(0, 255, 234);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     position: relative;
     font-weight: bolder;
     cursor: pointer;
@@ -358,6 +362,7 @@ nav .menu li .list:hover::after{
     width: 70%;
 }
 .tab-contents{
+    width: 100%;
     display: none;
     margin: 0px;
 }
@@ -372,14 +377,21 @@ nav .menu li .list:hover::after{
     font-size: 13px;
 }
 .tab-contents.one ul li{
-    width: 30%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+   padding-bottom: .8rem;
+}
+.tab-contents.one h2{
+    font-size: 1.2rem;
+    margin-bottom: .8rem;
+}
+.tab-contents.one .stack{
+    width: 50%;
 }
 .progress{
-    width: 50%;
+    width: 45%;
     height: 5px;
     border: 1px solid rgba(0, 255, 127, .2) ;
     position: relative;
@@ -427,14 +439,16 @@ nav .menu li .list:hover::after{
     }
     .tab-contents.one ul li{
         width: 100%;
-        margin: 5px 0;
+    }
+    .tab-contents.one ul li h2{
+        font-size: 1.1rem;
     }
     .tab-titles{
         margin-right: 20px;
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     .content1 h1{
-        font-size: 1rem;
+        font-size: 1.4rem;
         text-align: center;
     }
     .content h1::after{
@@ -461,7 +475,7 @@ nav .menu li .list:hover::after{
     overflow: hidden;
 }
 .service-container{
-    width: 95%;
+    width: 90%;
     margin: 20px auto;
 }
 .service-container  h1{
@@ -480,7 +494,7 @@ nav .menu li .list:hover::after{
 .service-content{
     width: 100%;
     display:flex; flex-wrap: wrap;
-    justify-content: center; align-items: center;
+    justify-content: space-between; align-items: center;
     color: #fff;
     margin: 0px auto;
     margin-top: 20px;
@@ -571,12 +585,12 @@ nav .menu li .list:hover::after{
         top: 9px;
         right: 70%
     }
-    .service-content{
-        width: 95%;
-        margin: 10px auto;
+    .service-title{
+        font-size: 1.3rem;
     }
-    .service-container  h1{
-        font-size: 1rem;
+    .service-content{
+        width: 100%;
+        margin: 10px auto;
     }
     .service1 h2{
         font-size: 16px;
@@ -585,7 +599,7 @@ nav .menu li .list:hover::after{
         font-size: 14px;
     }
     .service1{
-        width: 90%;
+        width: 100%;
     }
     .service1 a{
         font-size: .8rem;
@@ -611,7 +625,7 @@ nav .menu li .list:hover::after{
     overflow: hidden;
 }
 .project-container{
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 }
 .project-container h1{
@@ -630,18 +644,18 @@ nav .menu li .list:hover::after{
 }
 .project-content{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap;
     margin: 20px auto;
 }
 .project1{
-    width: 270px;
-    height: 180px;
+    width: 48%;
+    height: 200px;
     position: relative;
     overflow: hidden;
     box-shadow: 0 0px 5px  #141414;
     display: none;
-    margin: 10px 10px;
 }
 .project1:nth-child(1), .project1:nth-child(2), .project1:nth-child(3),
 .project1:nth-child(4){
@@ -734,16 +748,14 @@ nav .menu li .list:hover::after{
     .project-content{
         flex-wrap: wrap;
     }
-    .project1{
-        width: 350px;
-    }
 }
 @media screen and (max-width: 800px){
     .project-content{
         flex-wrap: wrap;
     }
     .project1{
-        width: 30%;
+        width: 100%;
+        height: 250px;
         margin: 10px auto;
     }
     .project-layer a{
