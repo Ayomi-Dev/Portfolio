@@ -453,13 +453,18 @@ nav .menu li .list:hover::after{
     }
     .content h1::after{
         top: 8px;
-        
     }
     .content1 p{
         font-size: small;
     }
     .content2 img{
         display: none;
+    }
+}
+@media screen and (max-width: 500px){
+    .content1 h1::after{
+        top: 8px;
+        left: 10%;
     }
 }
 
