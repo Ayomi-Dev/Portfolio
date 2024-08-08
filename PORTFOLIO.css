@@ -452,7 +452,7 @@ nav .menu li .list:hover::after{
         text-align: center;
     }
     .content h1::after{
-        top: 8px;
+        top: 11px;
     }
     .content1 p{
         font-size: small;
@@ -460,10 +460,13 @@ nav .menu li .list:hover::after{
     .content2 img{
         display: none;
     }
+    .about-content{
+        width: 95%;
+    }
 }
 @media screen and (max-width: 500px){
     .content1 h1::after{
-        top: 8px;
+        top: 11px;
         left: 10%;
     }
 }
@@ -581,6 +584,9 @@ nav .menu li .list:hover::after{
 @media screen and (max-width: 800px) {
     .service-container  h1{
        text-align: center;
+    }
+    .service-container{
+        width: 95%;
     }
     
 }
@@ -758,6 +764,9 @@ nav .menu li .list:hover::after{
     .project-content{
         flex-wrap: wrap;
     }
+    .project-container{
+        width: 95%;
+    }
     .project1{
         width: 100%;
         height: 250px;
@@ -805,7 +814,6 @@ nav .menu li .list:hover::after{
 @media screen and (max-width: 360px) {
     .project-container h1::after{
         width: 50px;
-        right: 85%;
     }
 }
 /* ------------------------CONTACT FORM-------------- */
@@ -912,6 +920,7 @@ nav .menu li .list:hover::after{
     }
     .contact-content{
         justify-content: center;
+        width: 95%;
     }
     #msg{
         font-size: smaller;
