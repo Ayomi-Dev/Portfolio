@@ -32,6 +32,8 @@
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
     width: 100%;
+    margin: 20px auto;
+    padding: 10px;
 }
 .project{
     position: relative;
@@ -65,7 +67,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 50px auto;
+    padding: 10px;
 }
 .project-layer h3{
     margin: 5px 0;
@@ -74,6 +76,8 @@
 }
 .project-layer p{
     font-size: 10px;
+    width: 60%;
+    margin: 5px auto;
 }
 .project-layer a{
     color: #fff;
@@ -88,18 +92,19 @@
 }
 .project-layer .tools{
     margin: 5px 0;
-    text-align: center;
 }
 .project-layer .tools h3{
     color:bisque;
     margin-bottom: 5px;
+    text-align: center;
 }
 .project-layer .tools img{
     width: 30px;
     height: 30px;
-    display: flex;
     position: relative;
     margin: 5px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 .tool-img{
     display: flex;

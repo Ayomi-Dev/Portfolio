@@ -100,9 +100,10 @@
 }
 .service-card i{
     margin-bottom: 10px;
-    font-size: 1.5rem;
-    color: #fff;
+    font-size: 2rem;
+    color: rgb(0, 255, 234);
 }
+
 
 /* SERVICE STYLING FOR SMALLER SCREENS */
 @media screen and (max-width: 800px){

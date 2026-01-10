@@ -1,48 +1,110 @@
+const react = "../assets/tools/react.png";
+const nextjs = "../assets/tools/nextjs.png";
+const express = "../assets/tools/express.jpg";
+const supabase = "../assets/tools/supabase.jpeg";
+const chakra = "../assets/tools/chakra.jpeg";
+const tailwind = "../assets/tools/tailwind.png";
+const mongoose = "../assets/tools/mongoose.jpeg";
+const prisma = "../assets/tools/prisma.png";
 const projects = [
     {
         id: 1,
         title: "Reward System",
         image: "../assets/projects/flowva.png",
-        desc: "",
-        link: "",
-        tools: []
+        desc: `Developed a full-stack rewards system using React and\n 
+                Supabase, featuring a secure backend with real-time profile\n 
+                updates, daily streak tracking, and dynamic reward unlocking.\n 
+                The system allows users to accumulate points, track progress, \n
+                and receive instant feedback, all while ensuring data integrity \n
+                and seamless user experience through modern React hooks, Supabase RPCs,\n
+                 and Row Level Security
+                `,
+        link: "https://reward-system-chi.vercel.app/",
+        tools: [
+            {name: "ReactJs", logo: react},
+            {name: "Supabase", logo: supabase},
+            {name: "TailwindCSS", logo: tailwind} 
+        ]
     },
     {
         id: 2,
         title: "Bookmark Manager",
         image: "../assets/projects/bookmark.png",
-        desc: "",
+        desc: `
+            A responsive bookmark management app built with React, 
+            TypeScript, and Next.js, allowing users to save, organize, 
+            and search bookmarks with automatic metadata fetching, tag-based filtering, 
+            and smooth interactive UI features.
+            `,
         link: "",
-        tools: []
+        tools: [
+            {name: "NextJS", logo: nextjs},
+            {name: "ReactJs", logo: react},
+            {name: "Chakra-UI", logo: chakra},
+            {name: "Prisma", logo: prisma}
+        ]
     },
     {
         id: 3,
         title: "Task UI Dashboard",
         image: "../assets/projects/task-ui.png",
-        desc: "",
+        desc: `
+            A dynamic task management feature that allows users to add tasks with 
+            assigned priority levels. Users can select from multiple priorities
+             (High, Medium, Low), and the interface visually reflects the selection
+            by dynamically changing the color of the flag icon corresponding to the 
+            chosen priority. The component includes a clean dropdown selection, 
+            supports clearing selections, and enhances task organization through 
+            intuitive visual cues.
+        `,
         link: "",
-        tools: []
+        tools: [
+            {name: "NextJS", logo: nextjs},
+            {name: "ReactJS", logo: react},
+            {name: "Chakra", logo: chakra}
+        ]
     },
     {
         id: 4,
         title: "Ecommerce Platform",
         image: "../assets/projects/istore.png",
-        desc: "",
+        desc: `
+            A full-stack e-commerce web application built with React, 
+            TypeScript, Redux, Tailwind CSS, Node.js, Express, and MongoDB.
+             Features include user authentication, admin product management, 
+             shopping cart, dynamic search and filtering, and secure Stripe 
+             checkout. Fully deployed on Render (backend) and a hosting platform 
+             for the frontend.
+        `,
         link: "",
-        tools: []
+        tools: [
+            {name: "ReactJS", logo: react},
+            {name: "ExpressJS", logo: express},
+            {name: "TailwindCSS", logo: tailwind},
+            {name: "Mongoose", logo: mongoose}
+        ]
     },
     {
         id: 5,
         title: "Mind App",
         image: "../assets/projects/mindapp.png",
-        desc: "",
+        desc: `
+            A React + TypeScript note-taking app with folder organization, live search, dark mode, 
+            and customizable note colors. It allows users to create, edit,
+             and delete notes, organize them under specific folders, and
+              persist data in the browser for a seamless, intuitive 
+              experience
+        `,
         link: "",
-        tools: []
+        tools: [
+            {name: "ReactJS", logo: react},
+            {name: "TailwindCSS", logo: tailwind}
+        ]
     },
     
 
 ]
-
+ 
 // POPULATING PROJECT SECTION
 document.querySelector(".project-content").innerHTML = projects.map((project) => {
     return (
@@ -54,13 +116,18 @@ document.querySelector(".project-content").innerHTML = projects.map((project) =>
                     <h2>${project.title}</h2>
                     <p>${project.desc}</p>
                     <div class="tools">
-                        <h3>Stack</h3> 
+                        <h3>Stack</h3>  
                         <div class="tool-img">
-                            <img src="react.png" alt="">
-                            <img src="css.jpeg" alt="">
+                        ${project.tools.map(tool => (
+                            `
+                                <div class="tool px-2" title=${tool.name}>
+                                    <img src=${tool.logo} alt="">
+                                </div>
+                            `
+                        )).join(" ")}
                         </div>
                     </div>
-                    <a target='_blank' href="https://my-realestate-app.netlify.app/"><i class="fas fa-arrow-up-right-from-square"></i></a>
+                    <a target='_blank' href=${project.link}><i class="icon-link bold"></i></a>
                 </div>
             </div>
         </div>
