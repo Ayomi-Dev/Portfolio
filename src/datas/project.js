@@ -1,6 +1,6 @@
 const react = "../assets/tools/react.png";
 const nextjs = "../assets/tools/nextjs.png";
-const express = "../assets/tools/express.jpg";
+const express = "../assets/tools/expressjs.jpg";
 const supabase = "../assets/tools/supabase.jpeg";
 const chakra = "../assets/tools/chakra.jpeg";
 const tailwind = "../assets/tools/tailwind.png";
@@ -11,13 +11,11 @@ const projects = [
         id: 1,
         title: "Reward System",
         image: "../assets/projects/flowva.png",
-        desc: `Developed a full-stack rewards system using React and\n 
+        desc: `Built a full-stack rewards system using React and\n 
                 Supabase, featuring a secure backend with real-time profile\n 
                 updates, daily streak tracking, and dynamic reward unlocking.\n 
                 The system allows users to accumulate points, track progress, \n
-                and receive instant feedback, all while ensuring data integrity \n
-                and seamless user experience through modern React hooks, Supabase RPCs,\n
-                 and Row Level Security
+                and receive instant feedback.
                 `,
         link: "https://reward-system-chi.vercel.app/",
         tools: [
@@ -51,13 +49,10 @@ const projects = [
         desc: `
             A dynamic task management feature that allows users to add tasks with 
             assigned priority levels. Users can select from multiple priorities
-             (High, Medium, Low), and the interface visually reflects the selection
-            by dynamically changing the color of the flag icon corresponding to the 
-            chosen priority. The component includes a clean dropdown selection, 
-            supports clearing selections, and enhances task organization through 
-            intuitive visual cues.
+             (High, Medium, Low), dynamically changing the color of the flag icon corresponding to the 
+            chosen priority.
         `,
-        link: "",
+        link: "https://todo-ui-tawny.vercel.app/",
         tools: [
             {name: "NextJS", logo: nextjs},
             {name: "ReactJS", logo: react},
@@ -73,10 +68,9 @@ const projects = [
             TypeScript, Redux, Tailwind CSS, Node.js, Express, and MongoDB.
              Features include user authentication, admin product management, 
              shopping cart, dynamic search and filtering, and secure Stripe 
-             checkout. Fully deployed on Render (backend) and a hosting platform 
-             for the frontend.
+             checkout.
         `,
-        link: "",
+        link: "https://i-store-xi-lime.vercel.app/",
         tools: [
             {name: "ReactJS", logo: react},
             {name: "ExpressJS", logo: express},
@@ -95,7 +89,7 @@ const projects = [
               persist data in the browser for a seamless, intuitive 
               experience
         `,
-        link: "",
+        link: "https://mind-app-nine.vercel.app/",
         tools: [
             {name: "ReactJS", logo: react},
             {name: "TailwindCSS", logo: tailwind}
@@ -134,4 +128,3 @@ document.querySelector(".project-content").innerHTML = projects.map((project) =>
         `
     )
 }).join(" ")
-console.log(projects)

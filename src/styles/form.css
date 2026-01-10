@@ -33,7 +33,7 @@ form input:focus, form textarea:focus{
 }
 form .inpWrap:nth-child(1) label{
     color:#fff;
-    font-size: 16px;
+    font-size: 12px;
     transition: .5s;
     position: absolute;
     top: 20px;
@@ -46,7 +46,7 @@ form .inpWrap:nth-child(1) label{
 }
 form .inpWrap:nth-child(2) label{
     color:#fff;
-    font-size: 16px;
+    font-size: 12px;
     transition: .5s;
     position: absolute;
     top: 75px;
@@ -59,7 +59,7 @@ form .inpWrap:nth-child(2) label{
 }
 form .inpWrap:nth-child(3) label{
     color:#fff;
-    font-size: 16px;
+    font-size: 12px;
     transition: .5s;
     position: absolute;
     top: 130px;
