@@ -1,0 +1,128 @@
+#services{
+    background: #1b2736;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+.service-container{
+    width: 90%;
+    margin: 20px auto;
+}
+.service-container  h1{
+    color: #fff;
+    position: relative;
+}
+.service-container  h1::after{
+    background: rgb(0, 255, 234);
+    content: '';
+    width: 120px;
+    height: 2px;
+    position: absolute;
+    top: 13px;
+    margin-left: 20px;
+}
+.service-content{
+    width: 100%;
+    display:flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    color: #fff;
+    margin: 0px auto;
+    margin-top: 20px;
+    gap: 15px;
+}
+.service-card{
+    border-radius: 10px;
+    transition: transform 0.3s, border 0.3s;
+    position: relative;
+    text-align: center;
+    width: 300px;
+    height: 280px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+.service-front, .service-back{
+    display: flex;
+    align-items: center; justify-content: center;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    padding: 20px; 
+    box-sizing: border-box;
+    box-shadow:  3px 3px 5px rgb(0, 255, 234);
+    border-radius: 10px;
+    backface-visibility: hidden;
+    transition: all .3s;
+}
+.service-card a{
+    margin-top: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color:#fff;
+    background: rgba(0, 255, 234, .3);
+}
+.service-front{
+    flex-direction: column;
+    transform: rotateY(0deg);
+    z-index: 2;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+}
+.service-back{
+    background: #1b2736;
+    flex-direction: column;
+    transform: rotateY(180deg);
+    font-weight: 700;
+    z-index: 999;
+}
+.service-back p{
+    color: #fff;
+}
+.service-card:hover .service-front{
+    transform: rotateY(-180deg);
+}
+.service-card:hover .service-back{
+    transform: rotateY(0deg);
+}
+.service-card h2{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: bolder;
+}
+.service-front p{
+    font-size: smaller;
+    letter-spacing: 1px;
+    color: rgb(0, 255, 234);
+}
+.service-card i{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* SERVICE STYLING FOR SMALLER SCREENS */
+@media screen and (max-width: 800px){
+    .service-title{
+        font-size: 1.3rem;
+    }
+    .service-content{
+        width: 100%;
+        margin: 10px auto;
+    }
+    .service-card h2{
+        font-size: 16px;
+    }
+    .service-card p{
+        font-size: 14px;
+    }
+    .service-card{
+        width: 100%;
+    }
+    .service-card a{
+        font-size: .8rem;
+    }
+}

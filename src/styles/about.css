@@ -1,0 +1,184 @@
+#about{
+    width: 100%;
+    color:#fff;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(pic.png);
+    background-position: center;
+    background-size: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.about-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 10px auto;
+    
+}
+.content1{
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.content2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+}
+.content1 h1{
+    position: relative;
+}
+.content1 h1::after{
+    content: '';
+    width: 17%;
+    height: 2px;
+    position: absolute;
+    left: 17%;
+    top: 13px;
+    background: rgb(0, 255, 234);
+}
+.content1 p{
+    margin-top: 20px;
+}
+.content1 p a{
+    color: rgb(0, 255, 234);
+}
+.tabs{
+    display: flex;
+    margin: 10px 0 40px;
+}
+.tab-titles{
+    color: rgb(0, 255, 234);
+    font-size: 1.3rem;
+    position: relative;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-right: 50px;
+}
+.tab-titles::after{
+    content: '';
+    width: 0% ;
+    height: 2px;
+    background: rgb(0, 255, 234);
+    position: absolute;
+    left:0;
+    bottom: -4px;
+    transition: 0.5s;
+}
+.tab-titles.active-link::after{
+    width: 70%;
+}
+.tab-contents{
+    width: 100%;
+    display: none;
+    margin: 0px;
+}
+.tab-contents h3{
+    color: #fff;
+    margin: 10px 0;
+    font-size: 15px;
+    color: rgb(0, 255, 234);
+}
+.tab-contents ul li{
+    padding: 5px 10px;
+    font-size: 13px;
+}
+.tab-contents.one ul li{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   padding-bottom: .8rem;
+}
+.tab-contents.one h2{
+    font-size: 1.2rem;
+    margin-bottom: .8rem;
+}
+.tab-contents.one .stack{
+    width: 50%;
+}
+.progress{
+    width: 45%;
+    height: 5px;
+    border: 1px solid rgba(0, 255, 127, .2) ;
+    position: relative;
+    border-radius: 5px;
+}
+.range{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgb(0, 255, 234);
+}
+.range.one{
+    width: 90%;
+}
+.range.two{
+    width: 80%;
+}
+.range.three{
+    width: 80%;
+}
+.range.four{
+    width: 70%;
+}
+.range.five{
+    width: 80%;
+}
+.tab-contents ul li span{
+    color:rgb(0, 255, 234);
+    margin-right: 5px;
+    font-weight: bolder;
+}
+.tab-contents.active-tab{
+    display: block;
+    transition: 0.5s;
+}
+/* -------------RESPONSIVENESS FOR ABOUT-SECTION----------------- */
+@media screen and (max-width: 800px){
+    .about-content{
+        padding: 20px 20px;
+        flex-direction: column;
+    }
+    .content1, .content2{
+        flex-basis: 100%;
+    }
+    .tab-contents.one ul li{
+        width: 100%;
+    }
+    .tab-contents.one ul li h2{
+        font-size: 1.1rem;
+    }
+    .tab-titles{
+        margin-right: 20px;
+        font-size: 1.3rem;
+    }
+    .content1 h1{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .content h1::after{
+        top: 11px;
+    }
+    .content1 p{
+        font-size: small;
+    }
+    .content2 img{
+        display: none;
+    }
+    .about-content{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 500px){
+    .content1 h1::after{
+        top: 11px;
+        left: 10%;
+    }
+}

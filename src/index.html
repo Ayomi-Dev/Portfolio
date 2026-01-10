@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AYOMIDE OLAKUNLE</title>
+    <title>Frontend web developer Portfolio</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/service.css">
+    <link rel="stylesheet" href="./styles/project.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/iconsax-font-icon@1.1.0/dist/icons.min.css" rel="stylesheet">
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="index.js" defer></script>
+    <script src="./datas/services.js" defer></script>
+    <script src="./datas/project.js" defer></script>
+</head>
+<body class="bg-gradient-to-l">
+    <section class="navigation  h-20 w-full z-10 sticky top-0 bg-[#930ef3]">
+        <nav class="flex w-full h-full items-center px-5 justify-between">
+            <div class="logo">
+                <h3><a href="#header" class="text-[1rem] text-[#00c6ff] font-bold">AYO</a></h3>
+            </div>
+            <ul class="menu text-white flex gap-2 items-center">
+                <li><a class="list active" href="#header">Home</a></li>
+                <li><a class="list" href="#about">About</a></li>
+                <li><a class="list" href="#services">Services</a></li>
+                <li><a class="list" href="#projects">Projects</a></li>
+                <li><a class="list" href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu hidden">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav> 
+    </section>
+    <section id="header">
+        <div class="text">
+            <h1>Creating <br> Awesomeness!</h1>
+            <h1>Hi there,</h1>   
+            <h1>My name is <span>AYOMIDE</span>,</h1>
+            <h1>I am a  <span>Front-End Web Developer.</span> </h1>
+        </div>
+    </section>
+
+    <!-------------- ABOUT------------- -->
+    <section id="about">
+        <div class="about-content reveal">
+            <div class="content1">
+                <h1>About Me</h1>
+                <p class="p1">  
+                    Passionate web developer with over 3+ experience in developing dynamic and
+                    responsive web applications using React, Node.js and Tailwind CSS. Thorougly 
+                    proficient collaborating with cross-functional teams to deliver high-quality 
+                     digital solutions, ensuring optimal user experience and performance. Dedicated to
+                    continuous learning and staying updated with latest industry trends and technologies.
+                </p>
+                <div class="tabs">
+                    <p class="tab-titles active-link" onclick="openTab('skills')">Skills</p>
+                    <p class="tab-titles" onclick="openTab('education')">Certifications</p>
+                </div>
+                <div class="tab-contents one active-tab" id="skills">
+                    <ul>
+                        <li>
+                            <div class="stack">
+                               <h2>Front-End:</h2>
+                               <span>React, Javascript, TypeScript, Tailwind CSS</span>
+                             </div>
+                            <div class="progress">
+                                <div class="range one"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stack">
+                                <h2>Backend:</h2>
+                                <span>NodeJS, ExpressJS, RESTful APIs</span>
+                            </div>
+                            <div class="progress">
+                                <div class="range two"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stack">
+                                <h2>Tools and Technologies:</h2>
+                                <span>Git</span>
+                            </div>
+                            <div class="progress">
+                                <div class="range three"></div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020</span> B.Sc Mathematics, Olabisi Onabanjo University, Nigeria.</li>
+                        <li><span>2022</span>JavaScript Algorithms and Data Structures with FreeCodeCamp.</li>
+                        <li><span>2022</span>Responsive Web Design with FreeCodeCamp</li>
+                        <li><span>2022</span>Google Digital Garage for Africa</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content2">
+                <a href="AYOMIDE OLAKUNLE.pdf" class="file" download>Download CV</a>
+            </div>            
+        </div>
+    </section>
+<!-- ---------SERVICES---------- -->
+    <section id="services">
+        <div class="service-container reveal">
+            <h1 class="service-title">My Services</h1>
+            <div class="service-content">
+                
+                     
+
+                
+            </div>
+        </div>
+    </section>
+<!-- ------------PROJECT SECTION------------- -->
+    <section id="projects">
+        <div class="project-container reveal">
+            <h1>Featured Projects</h1>
+            <div class="project-content">
+
+                
+
+                
+            </div>
+        </div>
+        <div class="more">
+            <button id="seeMore">See More</button>
+        </div>
+    </section>
+
+
+
+<!-- ----------------CONTACT SECTION--------------------------- -->
+    <section id="contact">
+        <div class="contact-box reveal">
+            <div class="contact-content">
+                <div class="col-1">
+                    <h2>Let's work together</h2>
+                    <a href='mailto:ayomideolakunlea1@gmail.com' target="_blank"><i class="fas fa-paper-plane"></i>  ayomideolakunlea1@gmail.com</a>
+                    <p><i class="fas fa-phone"></i>  +2347036532710</p>
+                    <div class="socials">
+                        <a target="_blank" href="https://twitter.com/Ayoolakunle11?t=LmCRRsanSAAmRxwqoUTalw&s=09"><i class="fab fa-twitter-square"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/abiola-ayomide-7aa956195"><i class="fab fa-linkedin"></i></a>
+                        <a target="_blank" href="https://github.com/Ayomi-Dev"><i class="fab fa-github"></i></a>
+                    </div>
+                    <a target="_blank" href="AYOMIDE OLAKUNLE.pdf" class="file" download>Download CV</a>
+                </div>
+                <div class="col-2">
+                    <h2>Send me a message</h2>
+                    <form name="submit-to-google-sheet">
+                        <div class="inpWrap">
+                            <input type="text" name="Name" autocomplete="off"  required id="name">
+                            <label>Your name</label>
+                        </div>
+                        <div class="inpWrap">
+                            <input type="text" name="Email" autocomplete="off" required id="email">
+                            <label>Your email</label>
+                        </div>
+                        <div class="inpWrap">
+                            <textarea name="Message" id="text" required rows="6"></textarea>
+                            <label for="">Your message</label>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <p>Copyrights <i class="fas fa-copyright"></i> <span>Ayomide</span> 2025.
+                All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxb5BI0l1HhtTcHsYoC-fgfz8uv6yJ7TSSdfb08j_OKcVorPw-IcBaz7F3IhWtE9TKt/exec'
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById('msg');
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = 'Thanks for contacting. Message successfully sent.'
+                setTimeout(function(){
+                    msg.innerHTML = ''
+                }, 5000)
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>

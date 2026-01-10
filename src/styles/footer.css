@@ -1,0 +1,22 @@
+#footer{
+    background: #141414;
+}
+.footer-container{
+    padding: 10px 30px;
+    color: #fff;
+    margin: auto;
+    text-align:  center;
+}
+.footer-container p{
+    color: #fff;
+}
+.footer-container span{
+    color: rgb(0, 255, 234);
+    font-size: 1.3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+@media screen and (max-width: 800px) {
+    .footer-container p{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.col-2 form{
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    width:100%;
+    border-radius: 10px;
+    position: relative;
+}
+form .inpWrap input{
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 255, 234, .3);
+    height: 35px;
+    margin: 10px 0;
+    background: none;
+    position: relative;
+    transition: border 0.5s;
+    outline: none;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-family: inherit;
+    padding: 0 10px;
+}
+
+form input:focus, form textarea:focus{
+    border: 1px solid rgb(0, 255, 234);
+}
+form .inpWrap:nth-child(1) label{
+    color:#fff;
+    font-size: 16px;
+    transition: .5s;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    padding: 0 5px;
+    transition: top .5s;
+    cursor: text;
+    background-color: #1b2736;
+    margin: 0 15px;
+}
+form .inpWrap:nth-child(2) label{
+    color:#fff;
+    font-size: 16px;
+    transition: .5s;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    padding: 0 5px;
+    transition: top .5s;
+    cursor: text;
+    background-color: #1b2736;
+    margin: 0 15px;
+}
+form .inpWrap:nth-child(3) label{
+    color:#fff;
+    font-size: 16px;
+    transition: .5s;
+    position: absolute;
+    top: 130px;
+    left: 0;
+    padding: 0 5px;
+    transition: top .5s;
+    cursor: text;
+    background-color: #1b2736;
+    margin: 0 10px;
+}
+form .inpWrap:nth-child(1) input:focus-within ~ label,
+form .inpWrap:nth-child(1) input:valid ~ label
+{
+    top: 5px;
+    left: 0;
+    margin: 0 15px;
+    color: rgb(0, 255, 234);
+    font-size: smaller;
+}
+form .inpWrap:nth-child(2) input:focus-within ~ label,
+form .inpWrap:nth-child(2) input:valid ~ label
+{
+    top: 58px;
+    left: 0;
+    margin: 0 15px;
+    color: rgb(0, 255, 234);
+    font-size: smaller;
+}
+form .inpWrap:nth-child(3) textarea:focus-within ~ label,
+form .inpWrap:nth-child(3) textarea:valid ~ label{
+    top: 115px;
+    left: 0;
+    margin: 0 15px;
+    color: rgb(0, 255, 234);
+    font-size: smaller;
+}
+form div textarea{
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 1px solid rgba(0, 255, 234, .3);
+    outline: none;
+    padding: 10px 10px;
+    background: none;
+    color:#fff;
+    transition: border 0.5s;
+}
