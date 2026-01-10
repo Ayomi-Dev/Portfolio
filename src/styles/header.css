@@ -1,11 +1,7 @@
 #header{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../../assets/bg.jpg");
-    background-position: center;
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    
     position: relative;
     overflow: hidden;
     display: flex;
@@ -86,42 +82,6 @@
 }
 /*RESPONSIVENESS FOR HEADER */
 @media screen and (max-width: 800px)  {
-    nav{
-        padding: 0 10px;
-    }
-    nav .menu{
-        display: block;
-        background: black;
-        right: 0px;
-        height: 100vh;
-        width: 0;
-        position: absolute;
-        top: 100%;
-        transition:  0.5s ease;
-        overflow: hidden;
-    }
-    nav .menu.active{
-        display: block;
-        background: black;
-        right: 0px;
-        height: 100vh;
-        width: 50%;
-        position: absolute;
-        top: 100%;
-        transition:  0.5s ease;
-        z-index: 999;
-    }
-    nav .menu li{
-        display: block;
-        margin-top: 50px;
-    }
-    .navigation{
-        height: 60px;
-    }
-    .logo a img{
-        height: 50px;
-        width: 50px;
-    }
     #header .text h1{
         font-size: 1.5rem;
     }
