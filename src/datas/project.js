@@ -1,16 +1,16 @@
-const react = "../assets/tools/react.png";
-const nextjs = "../assets/tools/nextjs.png";
-const express = "../assets/tools/expressjs.jpg";
-const supabase = "../assets/tools/supabase.jpeg";
-const chakra = "../assets/tools/chakra.jpeg";
-const tailwind = "../assets/tools/tailwind.png";
-const mongoose = "../assets/tools/mongoose.jpeg";
-const prisma = "../assets/tools/prisma.png";
+const react = "./assets/tools/react.png";
+const nextjs = "./assets/tools/nextjs.png";
+const express = "./assets/tools/expressjs.jpg";
+const supabase = "./assets/tools/supabase.jpeg";
+const chakra = "./assets/tools/chakra.jpeg";
+const tailwind = "./assets/tools/tailwind.png";
+const mongoose = "./assets/tools/mongoose.jpeg";
+const prisma = "./assets/tools/prisma.png";
 const projects = [
     {
         id: 1,
         title: "Reward System",
-        image: "../assets/projects/flowva.png",
+        image: "./assets/projects/flowva.png",
         desc: `Built a full-stack rewards system using React and\n 
                 Supabase, featuring a secure backend with real-time profile\n 
                 updates, daily streak tracking, and dynamic reward unlocking.\n 
@@ -27,7 +27,7 @@ const projects = [
     {
         id: 2,
         title: "Bookmark Manager",
-        image: "../assets/projects/bookmark.png",
+        image: "./assets/projects/bookmark.png",
         desc: `
             A responsive bookmark management app built with React, 
             TypeScript, and Next.js, allowing users to save, organize, 
@@ -45,7 +45,7 @@ const projects = [
     {
         id: 3,
         title: "Task UI Dashboard",
-        image: "../assets/projects/task-ui.png",
+        image: "./assets/projects/task-ui.png",
         desc: `
             A dynamic task management feature that allows users to add tasks with 
             assigned priority levels. Users can select from multiple priorities
@@ -62,7 +62,7 @@ const projects = [
     {
         id: 4,
         title: "Ecommerce Platform",
-        image: "../assets/projects/istore.png",
+        image: "./assets/projects/istore.png",
         desc: `
             A full-stack e-commerce web application built with React, 
             TypeScript, Redux, Tailwind CSS, Node.js, Express, and MongoDB.
@@ -81,7 +81,7 @@ const projects = [
     {
         id: 5,
         title: "Mind App",
-        image: "../assets/projects/mindapp.png",
+        image: "./assets/projects/mindapp.png",
         desc: `
             A React + TypeScript note-taking app with folder organization, live search, dark mode, 
             and customizable note colors. It allows users to create, edit,
