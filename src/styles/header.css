@@ -46,11 +46,15 @@
 }
 #header .text h1:nth-child(3){
     transition-delay: 2s;
-    font-size: 1.3rem;
 }
 #header .text h1:nth-child(4){
-    transition-delay: 3s;
-    font-size: 1.3rem;
+    transition-delay: 3s; 
+}
+#header .text h1:nth-child(3) span{
+    font-size: 2rem;
+}
+#header .text h1:nth-child(4) span{
+    font-size: 2rem;
 }
 
 

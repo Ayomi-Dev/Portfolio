@@ -24,11 +24,11 @@
     height: 2px;
     position: absolute;
     margin-left: 20px;
-    top: 15px;
+    top: 16px;
 }
 .project-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 20px;
     width: 100%;
     margin: 20px auto;
@@ -39,10 +39,6 @@
     overflow: hidden;
     box-shadow: 0 0px 5px  #141414;
     border-radius: 10px;
-}
-.project:nth-child(1), .project:nth-child(2), .project:nth-child(3),
-.project:nth-child(4){
-    display: block;
 }
 .project img{
     width: 100%;
@@ -69,14 +65,13 @@
     padding: 10px;
 }
 .project-layer h2{
-    margin: 5px 0;
+    padding: 3px 0;
     color: rgb(0, 255, 234);
     font-size: 1rem;
 }
 .project-layer p{
     font-size: 10px;
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
 }
 .project-layer a{
     color: #fff;
@@ -84,13 +79,10 @@
     margin: auto;
 }
 .project:hover img{
-    transform: scale(1.02);
+    transform: scale(1.05);
 }
 .project:hover .project-layer-wrapper{
     height: 100%;
-}
-.project-layer .tools{
-    margin: 5px 0;
 }
 .project-layer .tools h3{
     color:bisque;
@@ -135,8 +127,21 @@
         font-size: 1.2rem;
     }
     .project-layer p{
-        font-size: 12px;
-        width: 70%;
+        font-size: 7px;
     }
+    .project-content{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    .project-layer{
+        justify-content: flex-start;
+    }
+    .project-layer i{
+        font-size: .7rem;
+    }
+    .project-layer .tools img{
+        width: 20px;
+        height: 20px;
+    }
+
 }
 

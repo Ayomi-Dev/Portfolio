@@ -11,10 +11,10 @@ const projects = [
         id: 1,
         title: "Reward System",
         image: "./assets/projects/flowva.png",
-        desc: `Built a full-stack rewards system using React and\n 
-                Supabase, featuring a secure backend with real-time profile\n 
-                updates, daily streak tracking, and dynamic reward unlocking.\n 
-                The system allows users to accumulate points, track progress, \n
+        desc: `Built a full-stack rewards system using React and 
+                Supabase, featuring a secure backend with real-time profile 
+                updates, daily streak tracking, and dynamic reward unlocking. 
+                The system allows users to accumulate points, track progress, 
                 and receive instant feedback.
                 `,
         link: "https://reward-system-chi.vercel.app/",
@@ -30,8 +30,8 @@ const projects = [
         image: "./assets/projects/bookmark.png",
         desc: `
             A responsive bookmark management app built with React, 
-            TypeScript, and Next.js, allowing users to save, organize, 
-            and search bookmarks with automatic metadata fetching, tag-based filtering, 
+            TypeScript, and Next.js. Users can save, organize, 
+            & search bookmarks with auto metadata fetching,
             and smooth interactive UI features.
             `,
         link: "",
@@ -45,11 +45,11 @@ const projects = [
     {
         id: 3,
         title: "Task UI Dashboard",
-        image: "./assets/projects/task-ui.png",
+        image: "./assets/projects/taskui.png",
         desc: `
             A dynamic task management feature that allows users to add tasks with 
-            assigned priority levels. Users can select from multiple priorities
-             (High, Medium, Low), dynamically changing the color of the flag icon corresponding to the 
+            assigned priority levels. Users can select multiple priorities
+             (High, Medium, Low), dynamically change color of flag icon corresponding to
             chosen priority.
         `,
         link: "https://todo-ui-tawny.vercel.app/",
@@ -66,9 +66,9 @@ const projects = [
         desc: `
             A full-stack e-commerce web application built with React, 
             TypeScript, Redux, Tailwind CSS, Node.js, Express, and MongoDB.
-             Features include user authentication, admin product management, 
-             shopping cart, dynamic search and filtering, and secure Stripe 
-             checkout.
+            Features include user auth, admin product management, 
+            cart, dynamic search & filtering, and secure Stripe 
+            checkout.
         `,
         link: "https://i-store-xi-lime.vercel.app/",
         tools: [
@@ -84,10 +84,9 @@ const projects = [
         image: "./assets/projects/mindapp.png",
         desc: `
             A React + TypeScript note-taking app with folder organization, live search, dark mode, 
-            and customizable note colors. It allows users to create, edit,
-             and delete notes, organize them under specific folders, and
-              persist data in the browser for a seamless, intuitive 
-              experience
+            and customizable note colors. Users can create, edit,
+            delete, organize notes under specific folders, and
+            persist data.
         `,
         link: "https://mind-app-nine.vercel.app/",
         tools: [
@@ -121,7 +120,7 @@ document.querySelector(".project-content").innerHTML = projects.map((project) =>
                         )).join(" ")}
                         </div>
                     </div>
-                    <a target='_blank' href=${project.link}><i class="icon-link bold"></i></a>
+                    <a target='_blank' href=${project.link}><i class="fas fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
