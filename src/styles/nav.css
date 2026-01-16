@@ -35,12 +35,6 @@ nav{
     height: 80px;
     border-radius: 50%;
 }
-nav .hr{
-    background: #00c6ff;
-    width: 80%;
-    height: 2px;
-    margin: 0 auto;
-}
 nav .menu{
     display: block;
     background: #1b2736;
@@ -73,15 +67,31 @@ nav .menu li{
     font-weight: bolder;
     transition: color .5s;
 }
-nav .menu .connect{
+nav .menu .socials{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     margin: 10px 0;
 }
-nav .menu .connect a:hover{
+nav .menu .socials a:hover{
     color: rgb(0, 255, 234);
+}
+nav .menu .connect{
+    margin: 50px auto;
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+nav .menu .connect .hr{
+    background: rgb(0, 255, 234);
+    width: 80%;
+    height: 2px;
+    margin: 20px auto;
 }
 
 nav .menu li .link{
@@ -143,3 +153,8 @@ nav .menu li .link:hover::after{
     transition: 0.5s;
     width: 100%;
 } 
+@media screen and (max-width: 768px) {
+    nav .menu.active{
+        width: 50%;
+    }
+}

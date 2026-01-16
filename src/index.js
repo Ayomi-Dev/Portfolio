@@ -27,7 +27,7 @@ let texts = document.getElementsByTagName('h1');
 }
  
 // ACTIVE NAVIGATION MENU
-let list = document.querySelectorAll('.list');
+let list = document.querySelectorAll('.link');
 
 function activeList() { //function to add active class on each nav link
     list.forEach((item) => {
