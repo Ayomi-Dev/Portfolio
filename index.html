@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AYOMIDE OLAKUNLE</title>
     <title>Frontend web developer Portfolio</title>
-    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="./src/styles/nav.css">
     <link rel="stylesheet" href="./src/styles/header.css">
@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./src/styles/form.css">
     <link rel="stylesheet" href="./src/styles/footer.css">
     <link href="https://cdn.jsdelivr.net/npm/iconsax-font-icon@1.1.0/dist/icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./src/index.js" defer></script>
@@ -30,13 +31,24 @@
                 <h3><a href="#header" class="text-[1rem] text-[#00c6ff] font-bold">AYO</a></h3>
             </div>
             <ul class="menu text-white flex gap-2 items-center">
-                <li><a class="list active" href="#header">Home</a></li>
-                <li><a class="list" href="#about">About</a></li>
-                <li><a class="list" href="#services">Services</a></li>
-                <li><a class="list" href="#projects">Projects</a></li>
-                <li><a class="list" href="#contact">Contact</a></li>
+                <li><a class="link active" href="#header">Home</a></li>
+                <li><a class="link" href="#about">About</a></li>
+                <li><a class="link" href="#services">Services</a></li>
+                <li><a class="link" href="#projects">Projects</a></li>
+                <div class="hr"></div>
+                <li>
+                    <div>
+                        <h2 class="text-center">Have an idea? <span class="text-[#00c6ff]">Tell me about it</span></h2>
+                        <div class="connect">
+                            <a target="_blank" href="https://twitter.com/Ayoolakunle11?t=LmCRRsanSAAmRxwqoUTalw&s=09"><i class="fab fa-twitter"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/abiola-ayomide-7aa956195"><i class="fab fa-linkedin"></i></a>
+                            <a target="_blank" href="https://github.com/Ayomi-Dev"><i class="fab fa-github"></i></a>
+                            <a href='mailto:ayomideofficial2025@gmail.com' target="_blank"><i class="fa fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </li>
             </ul>
-            <div class="mobile-menu hidden">
+            <div class="mobile-menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -61,7 +73,7 @@
                     Passionate web developer with over 3+ experience in developing dynamic and
                     responsive web applications using React, Next.Js, Node.js and Tailwind CSS. Thorougly 
                     proficient collaborating with cross-functional teams to deliver high-quality 
-                     digital solutions, ensuring optimal user experience and performance. Dedicated to
+                    digital solutions, ensuring optimal user experience and performance. Dedicated to
                     continuous learning and staying updated with latest industry trends and technologies.
                 </p>
                 <div class="tabs">
@@ -108,21 +120,15 @@
                         <li><span>2022</span>Google Digital Garage for Africa</li>
                     </ul>
                 </div>
-            </div>
-            <div class="content2">
-                <a href="AYOMIDE OLAKUNLE.pdf" class="file" download>Download CV</a>
-            </div>            
+            </div>           
         </div>
     </section>
 <!-- ---------SERVICES---------- -->
     <section id="services">
         <div class="service-container reveal">
-            <h1 class="service-title">My Services</h1>
+            <h1 class="service-title">What Do I Offer?</h1>
             <div class="service-content">
-                
-                     
-
-                
+        
             </div>
         </div>
     </section>
@@ -131,15 +137,9 @@
         <div class="project-container reveal">
             <h1>Featured Projects</h1>
             <div class="project-content">
-
-                
-
-                
+            
             </div>
         </div>
-        <!-- <div class="more">
-            <button id="seeMore">See More</button>
-        </div> -->
     </section>
 
 
@@ -150,12 +150,12 @@
             <div class="contact-content">
                 <div class="col-1">
                     <h2>Let's work together</h2>
-                    <a href='mailto:ayomideofficial2025@gmail.com' target="_blank"><i class="icon-message bold"></i>  ayomideofficial2025@gmail.com</a>
+                    <a href='mailto:ayomideofficial2025@gmail.com' target="_blank"><i class="icon-message bold"></i>ayomideofficial2025@gmail.com</a>
                     <p><i class="icon-call bold"></i>  +2347036532710</p>
                     <div class="socials">
-                        <a target="_blank" href="https://twitter.com/Ayoolakunle11?t=LmCRRsanSAAmRxwqoUTalw&s=09"><i class="icon-twitter bold"></i></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/abiola-ayomide-7aa956195"><i class="icon-linkedin bold"></i></a>
-                        <a target="_blank" href="https://github.com/Ayomi-Dev"><i class="icon-github bold"></i></a>
+                        <a target="_blank" href="https://twitter.com/Ayoolakunle11?t=LmCRRsanSAAmRxwqoUTalw&s=09"><i class="fab fa-twitter"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/abiola-ayomide-7aa956195"><i class="fab fa-linkedin"></i></a>
+                        <a target="_blank" href="https://github.com/Ayomi-Dev"><i class="fab fa-github"></i></a>
                     </div>
                     <a target="_blank" href="AYOMIDE OLAKUNLE.pdf" class="file" download>Download CV</a>
                 </div>
@@ -184,7 +184,7 @@
 
     <footer id="footer">
         <div class="footer-container">
-            <p>Copyrights <i class="icon-copyright"></i> <span>Ayomide</span> 2025.
+            <p>Copyrights <i class="icon-copyright"></i> <span>Ayomide</span> 2026.
                 All Rights Reserved.
             </p>
         </div>
