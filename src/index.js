@@ -79,31 +79,55 @@ const openTab = (tabName) => { //adding corresponding tab to their title
 //     }
 // }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// SCROLL REVEAL ANIMATION
 ScrollReveal({
-    reset: false,
-    distance: '60px',
+    reset: true,
+    distance: '100px',
     duration: 2500,
     delay: 200
 
 });
-ScrollReveal().reveal('.content1 h1, .project-container h2, .project, .service-card, .service-card.three',
- { delay: 200, origin: 'left' });
-ScrollReveal().reveal('.content1 .tab-titles, .col-2', { delay: 300, origin: 'bottom', interval: 200 });
-ScrollReveal().reveal('.content1 .p1, .content2, .project.one, .project.three, .service-card',
- { delay: 300, origin: 'right'});
-ScrollReveal().reveal('.service-title, .col-1', { delay: 300, origin: 'top' });
+ScrollReveal().reveal(`.service`, { delay: 300, origin: "left"})
+
+
+ScrollReveal()
+.reveal(`
+    .content1 .tab-titles, 
+    .col-2,
+    .tab-contents,
+    .service-content,
+    .project-content
+`, 
+    { 
+        delay: 300, 
+        origin: 'bottom', 
+        interval: 200 
+    }
+);
+ScrollReveal()
+.reveal(`
+    .content1 .p1,  
+    .service-card four,
+`,
+    { 
+        delay: 300, 
+        origin: 'right'
+    }
+);
+ScrollReveal()
+.reveal(`
+    .service-title, 
+    .col-1,
+    .service-card one,
+    .service-card two,
+    .service-card three,
+    .service-card four,
+    .content1 h1,
+    #projects h1,
+    .project-content .project
+`, 
+    { 
+        delay: 300, 
+        origin: 'top' 
+    }
+);  
