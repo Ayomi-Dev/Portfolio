@@ -1,124 +1,92 @@
-#header{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#header .text{
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: 0 auto;
-    justify-content: center;
-    height: 100%;
+
+#header .text {
+  width: 90%;
+  max-width: 1100px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
-#header .text h1{
-    transform: translateY(120px);
-    opacity: 0;
-    transition: transform 1s, opacity 1s;
+
+/* ===== BASE ANIMATION FOR ELEMENTS IN TEXT CONTAINER ===== */
+#header .text > * {
+  transform: translateX(-120px);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
 }
-#header .text h1.active{
-    transform: translateY(-50px);
-    opacity: 1;
-    margin: 6px 0;
+
+#header .text > *.active {
+  transform: translateX(0);
+  opacity: 1;
 }
-#header .text h1.active span{
-    transform: translateY(0px);
-    opacity: 1;
+
+/* ===== HERO TITLE ===== */
+.hero-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.2;
+  color: rgb(0, 255, 234);
 }
-#header .text h1:nth-child(1){
-    padding-bottom: 20px;
-    color: rgb(0, 255, 234);
-    font-size: 2.5rem;
+
+/* ===== SUBTITLE ===== */
+.hero-subtitle {
+  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+  font-style: italic;
+  max-width: 600px;
 }
-#header .text h1:nth-child(1) span{
-    font-style: italic;
-    font-weight: light;
+
+/* ===== INTRO ===== */
+.intro {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  transition-delay: 0.8s;
+}
+
+/* ===== ROLE & NAME ===== */
+.role,
+.name {
     font-size: 1rem;
 }
-#header .text h1:nth-child(2){
-    transition-delay: 1s;
-    font-size: 1.1rem;
-}
-#header .text h1:nth-child(3){
-    transition-delay: 2s;
-}
-#header .text h1:nth-child(4){
-    transition-delay: 3s; 
-}
-#header .text h1:nth-child(3) span{
-    font-size: 2rem;
-}
-#header .text h1:nth-child(4) span{
-    font-size: 2rem;
+
+.name span,
+.role span {
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  margin-left: 0.5rem;
+  opacity: 0;
+  color: transparent;
+  font-weight: bold;
+  background-image: linear-gradient(90deg, #00c6ff, rgb(0, 255, 234));
+  background-position: -600px 0;
+  background-repeat: repeat-x;
+  transform: translateY(20px);
+  transition: opacity .8s ease, transform 0.8s ease;
+  -webkit-background-clip: text;
 }
 
+.name span.reveal {
+    opacity: 1;
+    transform: translateY(0);
+    animation: backcolor 3s linear infinite;
+}
 
-/* TEXT REVEAL ANIMATION*/
-#header .text h1:nth-child(3) span{
-    color: transparent;
-    font-weight: bolder;
-    background-image: linear-gradient(#00c6ff 30%, rgb(0, 255, 234) 70%);
-    background-repeat: repeat-x;
-    -webkit-background-clip: text;
-    background-position: -300px 0px ;
-    animation: backcolor 3s linear;
-    animation-delay: 1.5s;
-    font-size: 1.6rem
+.role span.reveal {
+    opacity: 1;
+    transform: translateY(0);
+    animation: backcolor 5s linear infinite;
 }
-#header .text h1:nth-child(4) span{
-    color: transparent;
-    font-weight: bolder;
-    background-image: linear-gradient(#00c6ff, rgb(0, 255, 234));
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    background-position: -700px 0px ;
-    animation: backcolor 4s linear;
-    animation-delay: 2s;
-    font-size: 26px;
-}
-@keyframes backcolor{
-    100%{
-        background-position: 0 0; 
-        background-repeat: no-repeat;
-        color: transparent;
-    }
-}
-/*RESPONSIVENESS FOR HEADER */
-@media screen and (max-width: 800px)  {
-    #header .text h1{
-        font-size: 1.5rem;
-    }
-    #header .text h1:nth-child(1){
-        font-size: 1.9rem;
-    }
-    #header .text h1:nth-child(3) span{
-        font-size: 1.7rem;
-    }
-    #header .text h1:nth-child(1){
-        transition-delay: 0s;
-    }
-    #header .text h1:nth-child(2){
-        transition-delay: 1s;
-    }
-    #header .text h1:nth-child(3){
-        transition-delay: 2s;
-    }
-    #header .text h1:nth-child(4){
-        transition-delay: 3s;
-    }
-    #header .text h1:nth-child(3) span, #header .text h1:nth-child(4) span{
-        animation-delay: 1.9s;
-    }
-    #header .text h1:nth-child(4) span{
-        animation-delay: 2.3s;
-    }
-    #header{
-        overflow: visible;
-    }
-    
+
+/* ===== TEXT REVEAL ANIMATION ===== */
+@keyframes backcolor{ 
+    100%
+        { 
+            background-position: 0 0; 
+            background-repeat: no-repeat; 
+            color: transparent; 
+        }
 }

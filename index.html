@@ -25,7 +25,7 @@
     <script src="./src/datas/services.js" defer></script>
     <script src="./src/datas/project.js" defer></script>
 </head>
-<body class="bg-gradient-to-l">
+<body class="">
     <section class="navigation  h-20 w-full z-10 sticky top-0 bg-[#930ef3]">
         <nav class="flex w-full h-full items-center px-5 justify-between">
             <div class="logo">
@@ -60,14 +60,26 @@
     <!-- HEADER SECTION -->
     <section id="header">
         <div class="text">
-            <h1>Build Exellence! <br>
-                <span>Building fast, accessible, and future-ready applications.</span>
+            <h1 class="hero-title">
+              Build Excellence!
             </h1>
-            <h1>Hi there,</h1>   
-            <h1>My name is <span>AYOMIDE</span></h1>
-            <h1>I am a  <span> Web Developer.</span> </h1>
+        
+            
+            <p class="intro">Hi there,</p>
+            
+            <h2 class="name">
+                My name is <span>AYOMIDE</span>
+            </h2>
+            
+            <h2 class="role">
+                I am a <span>Web Developer.</span>
+            </h2>
+            <p class="hero-subtitle">
+              I build fast, accessible, and future-ready web applications.
+            </p>
         </div>
     </section>
+
 
     <!-------------- ABOUT------------- -->
     <section id="about">
@@ -82,8 +94,8 @@
                     continuous learning and staying updated with latest industry trends and technologies.
                 </p>
                 <div class="tabs">
-                    <p class="tab-titles active-link" onclick="openTab('skills')">Skills</p>
-                    <p class="tab-titles" onclick="openTab('education')">Certifications</p>
+                    <p class="tab-titles active" onclick="openTab('skills')">Skills</p>
+                    <!-- <p class="tab-titles" onclick="openTab('education')">Certifications</p> -->
                 </div>
                 <div class="tab-contents one active-tab" id="skills">
                     <ul>
@@ -117,14 +129,14 @@
 
                     </ul>
                 </div>
-                <div class="tab-contents" id="education">
+                <!-- <div class="tab-contents" id="education">
                     <ul>
                         <li><span>2020</span> B.Sc Mathematics, Olabisi Onabanjo University, Nigeria.</li>
                         <li><span>2022</span>JavaScript Algorithms and Data Structures with FreeCodeCamp.</li>
                         <li><span>2022</span>Responsive Web Design with FreeCodeCamp</li>
                         <li><span>2022</span>Google Digital Garage for Africa</li>
                     </ul>
-                </div>
+                </div> -->
             </div>           
         </div>
     </section>

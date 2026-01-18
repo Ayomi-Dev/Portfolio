@@ -51,7 +51,7 @@
     margin: 10px 0 40px;
 }
 .tab-titles{
-    color: rgb(0, 255, 234);
+    color: #fff;
     font-size: 1.3rem;
     position: relative;
     font-weight: bolder;
@@ -68,8 +68,11 @@
     bottom: -4px;
     transition: 0.5s;
 }
-.tab-titles.active-link::after{
+.tab-titles.active::after{
     width: 70%;
+}
+.tab-titles.active{
+    color: rgb(0, 255, 234);
 }
 .tab-contents{
     width: 100%;
