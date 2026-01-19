@@ -4,20 +4,19 @@
     background: #1b2736;
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 997;
 }
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     background: #1b2736;
     height: 100%;
 }
 .logo{
     align-self: center;
-    margin-left: 10px;
 }
 .logo h3 a{
     font-size: 1.8rem;
@@ -117,7 +116,6 @@ nav .menu li .link:hover::after{
 .mobile-menu{
     display: grid;
     row-gap: 4px;
-    margin: 0 20px;
     width: 30px;
     display: flex;
     align-items: flex-end;

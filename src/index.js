@@ -102,7 +102,7 @@ const openTab = (tabName) => { //adding corresponding tab to their title
 // SCROLL REVEAL ANIMATION
 ScrollReveal({
     reset: true,
-    distance: '60px',
+    distance: '100px',
     duration: 1500,
     delay: 200
 
@@ -125,8 +125,7 @@ ScrollReveal()
     }
 );
 ScrollReveal()
-.reveal(`
-    .content1 .p1,  
+.reveal(` ,  
     .service-card four,
 `,
     { 

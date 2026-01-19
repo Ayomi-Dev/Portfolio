@@ -1,7 +1,6 @@
 #about{
     width: 100%;
     color:#fff;
-    overflow: hidden;
 }
 .about-content{
     display: flex;
@@ -29,7 +28,7 @@
     width: 120px;
     height: 2px;
     position: absolute;
-    top: 15px;
+    top: 17px;
     margin-left: 20px;
     background: rgb(0, 255, 234);
 }
@@ -44,7 +43,6 @@
     width: 300px;
     justify-content: space-between;
     margin-top: 40px;
-    padding: 10px;
 }
 .tab-titles{
     color: #fff;
@@ -64,7 +62,7 @@
     background: rgb(0, 255, 234);
     position: absolute;
     top: 5px;
-    left: -10px;
+    left: -8px;
     transition: 0.5s;
 }
 .tab-titles.active::before{
@@ -81,11 +79,8 @@
     display: block;
     opacity: 1;
 }
-.tab-contents h3{
-    color: #fff;
-    margin: 10px 0;
-    font-size: 15px;
-    color: rgb(0, 255, 234);
+.tab-contents ul{
+    padding-top: 10px;
 }
 .tab-contents ul li{
     width: 100%;
@@ -93,7 +88,6 @@
     align-items: center;
     justify-content: space-between;
     padding-bottom: .8rem;
-    padding: 5px 0px;
     margin-bottom: .8rem;
 }
 .tab-contents .stack h2{
@@ -140,23 +134,15 @@
     .content1{
         flex-basis: 100%;
     }
-    .tab-contents.one ul li{
-        width: 100%;
-    }
-    .tab-contents.one ul li h2{
-        font-size: 1.1rem;
-    }
     .content1 p{
         font-size: small;
     }
-    .content2 img{
-        display: none;
-    }
+
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 350px){
     .tabs{
-        width: 70%;
+        width: 90%;
     }
 }
 
