@@ -127,5 +127,8 @@
         width: 20px;
         height: 20px;
     }
+    .project-layer{
+        padding-bottom: 5px;
+    }
 }
 
