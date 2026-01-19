@@ -6,9 +6,9 @@
     overflow: hidden;
 }
 .contact-box{
-    padding: 20px 30px;
     color: #fff;
-    width: 100%;
+    width: 90%;
+    margin: 20px auto;
 }
 .contact-content{
     width: 100%;
@@ -55,11 +55,12 @@
 .col-2{
     flex-basis: 60%;
 }
-.col-2 form button{
-    background: rgb(0, 255, 234, .3);
+.col-2 form button, .col-1 .file{
+    background: linear-gradient(90deg, #00c6ff, rgb(0, 255, 234));
     padding: 10px 20px;
     margin: 2px auto;
     color: #fff;
+    font-weight: bolder;
     border: 0;
     border-radius: 6px;
     cursor: pointer;
@@ -68,19 +69,7 @@
 .col-2 form button:hover{
     background: rgb(0, 255, 234, .6);
 }
-.col-1 .file, .content2 .file{
-    background:  rgba(0, 255, 234, .3);
-    padding: 10px 20px;
-    color: #fff;
-    border: 0;
-    border-radius: 6px;
-    cursor: pointer;
-}
-.content2 .file{
-    margin: 5px 0;
-    transition: background 0.5s;
-}
-.content2 .file:hover, .col-1 .file:hover{
+.col-1 .file:hover{
     background:  rgba(0, 255, 234, .6) ;
     color: #fff;
 }

@@ -114,7 +114,6 @@ ScrollReveal()
 .reveal(`
     .content1 .tab-titles, 
     .col-2,
-    .tab-contents,
     .service-content,
     .project-content
 `, 
@@ -125,7 +124,7 @@ ScrollReveal()
     }
 );
 ScrollReveal()
-.reveal(` ,  
+.reveal(`
     .service-card four,
 `,
     { 
@@ -137,13 +136,8 @@ ScrollReveal()
 .reveal(`
     .service-title, 
     .col-1,
-    .service-card one,
-    .service-card two,
-    .service-card three,
-    .service-card four,
     .content1 h1,
     #projects h1,
-    .project-content .project
 `, 
     { 
         delay: 300, 
