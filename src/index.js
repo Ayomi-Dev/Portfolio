@@ -97,26 +97,13 @@ const openTab = (tabName) => { //adding corresponding tab to their title
     document.getElementById(tabName).classList.add('active-tab');
 }
 
-// LOADING MORE OPTION
-// let loadmore = document.getElementById('seeMore');
-// let currentItem = 3;
 
-// loadmore.onclick = () =>{ 
-//     let boxes = [...document.querySelectorAll('.project1')];
-//     for(let i = currentItem; i < currentItem + 3; i++){ //looping through all element containing project1
-//         boxes[i].style.display = 'inline-block'
-//     }
-//     currentItem += 3;
-//     if(currentItem >= boxes.length){  //condition for removing load more button
-//         loadmore.style.display = 'none';
-//     }
-// }
 
 // SCROLL REVEAL ANIMATION
 ScrollReveal({
     reset: true,
-    distance: '100px',
-    duration: 2500,
+    distance: '60px',
+    duration: 1500,
     delay: 200
 
 });

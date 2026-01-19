@@ -11,7 +11,6 @@
     align-items: center;
     width: 90%;
     margin: 10px auto;
-    
 }
 .content1{
     width: 100%;
@@ -19,12 +18,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-}
-.content2{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 50px;
 }
 .content1 h1{
     position: relative;
@@ -48,36 +41,45 @@
 }
 .tabs{
     display: flex;
-    margin: 10px 0 40px;
+    width: 300px;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 10px;
 }
 .tab-titles{
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     position: relative;
     font-weight: bolder;
     cursor: pointer;
-    margin-right: 50px;
-}
-.tab-titles::after{
-    content: '';
-    width: 0% ;
-    height: 2px;
-    background: rgb(0, 255, 234);
-    position: absolute;
-    left:0;
-    bottom: -4px;
-    transition: 0.5s;
-}
-.tab-titles.active::after{
-    width: 70%;
+    transition: all .5s;
 }
 .tab-titles.active{
     color: rgb(0, 255, 234);
 }
+.tab-titles::before{
+    content: '';
+    width: 0;
+    height: 0;
+    background: rgb(0, 255, 234);
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    transition: 0.5s;
+}
+.tab-titles.active::before{
+    width: 3px;
+    height: 70%;
+}
 .tab-contents{
     width: 100%;
     display: none;
-    margin: 0px;
+    opacity: 0;
+    transition: all .8s;
+}
+.tab-contents.active-tab{
+    display: block;
+    opacity: 1;
 }
 .tab-contents h3{
     color: #fff;
@@ -86,22 +88,22 @@
     color: rgb(0, 255, 234);
 }
 .tab-contents ul li{
-    padding: 5px 10px;
-    font-size: 13px;
-}
-.tab-contents.one ul li{
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-   padding-bottom: .8rem;
-}
-.tab-contents.one h2{
-    font-size: 1.2rem;
+    padding-bottom: .8rem;
+    padding: 5px 0px;
     margin-bottom: .8rem;
 }
-.tab-contents.one .stack{
-    width: 50%;
+.tab-contents .stack h2{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.tab-contents .stack span{
+    font-size: .8rem;
+    color:rgb(0, 255, 234);
+    margin-right: 5px;
 }
 .progress{
     width: 45%;
@@ -132,22 +134,10 @@
 .range.five{
     width: 80%;
 }
-.tab-contents ul li span{
-    color:rgb(0, 255, 234);
-    margin-right: 5px;
-    font-weight: bolder;
-}
-.tab-contents.active-tab{
-    display: block;
-    transition: 0.5s;
-}
+
 /* -------------RESPONSIVENESS FOR ABOUT-SECTION----------------- */
 @media screen and (max-width: 800px){
-    .about-content{
-        padding: 20px 20px;
-        flex-direction: column;
-    }
-    .content1, .content2{
+    .content1{
         flex-basis: 100%;
     }
     .tab-contents.one ul li{
@@ -156,17 +146,17 @@
     .tab-contents.one ul li h2{
         font-size: 1.1rem;
     }
-    .tab-titles{
-        margin-right: 20px;
-        font-size: 1.3rem;
-    }
     .content1 p{
         font-size: small;
     }
     .content2 img{
         display: none;
     }
-    .about-content{
-        width: 95%;
+}
+
+@media screen and (max-width: 400px){
+    .tabs{
+        width: 70%;
     }
 }
+
