@@ -29,7 +29,7 @@ const projects = [
         title: "Bookmark Manager",
         image: "./assets/projects/bookmark.png",
         desc: `
-            A responsive bookmark management app built with React, 
+            A fullstack bookmark management app built with React, 
             TypeScript, and Next.js. Users can save, organize, 
             & search bookmarks with auto metadata fetching,
             and smooth interactive UI features.
