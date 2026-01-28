@@ -34,7 +34,7 @@ const projects = [
             & search bookmarks with auto metadata fetching,
             and smooth interactive UI features.
             `,
-        link: "",
+        link: "https://manage-bookmarks.vercel.app/",
         tools: [
             {name: "NextJS", logo: nextjs},
             {name: "ReactJs", logo: react},
@@ -44,23 +44,6 @@ const projects = [
     },
     {
         id: 3,
-        title: "Task UI Dashboard",
-        image: "./assets/projects/taskui.png",
-        desc: `
-            A dynamic task management feature that allows users to add tasks with 
-            assigned priority levels. Users can select multiple priorities
-             (High, Medium, Low), dynamically change color of flag icon corresponding to
-            chosen priority.
-        `,
-        link: "https://todo-ui-tawny.vercel.app/",
-        tools: [
-            {name: "NextJS", logo: nextjs},
-            {name: "ReactJS", logo: react},
-            {name: "Chakra", logo: chakra}
-        ]
-    },
-    {
-        id: 4,
         title: "Ecommerce Platform",
         image: "./assets/projects/istore.png",
         desc: `
@@ -76,6 +59,23 @@ const projects = [
             {name: "ExpressJS", logo: express},
             {name: "TailwindCSS", logo: tailwind},
             {name: "Mongoose", logo: mongoose}
+        ]
+    },
+    {
+        id: 4,
+        title: "Task UI Dashboard",
+        image: "./assets/projects/taskui.png",
+        desc: `
+            A dynamic task management feature that allows users to add tasks with 
+            assigned priority levels. Users can select multiple priorities
+             (High, Medium, Low), dynamically change color of flag icon corresponding to
+            chosen priority.
+        `,
+        link: "https://todo-ui-tawny.vercel.app/",
+        tools: [
+            {name: "NextJS", logo: nextjs},
+            {name: "ReactJS", logo: react},
+            {name: "Chakra", logo: chakra}
         ]
     },
     {
