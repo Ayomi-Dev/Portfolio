@@ -118,17 +118,16 @@ ScrollReveal()
     .project-content
 `, 
     { 
-        delay: 300, 
+        delay: 100, 
         origin: 'bottom', 
-        interval: 200 
     }
 );
 ScrollReveal()
 .reveal(`
-    .service-card four,
+    .about-title,
 `,
     { 
-        delay: 300, 
+        delay: 200, 
         origin: 'right'
     }
 );

@@ -11,7 +11,7 @@ const projects = [
         id: 1,
         title: "Reward System",
         image: "./assets/projects/flowva.png",
-        desc: `Built a full-stack rewards system using React and 
+        desc: `A flowva recreated full-stack rewards system using React and 
                 Supabase, featuring a secure backend with real-time profile 
                 updates, daily streak tracking, and dynamic reward unlocking. 
                 The system allows users to accumulate points, track progress, 

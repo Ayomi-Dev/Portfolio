@@ -29,7 +29,7 @@ const services = [
         title: "SEO And Performance Optimization",
         class: "service-card four",
         icon: "icon-search-status bold",
-        desc: `A skow website costs you visitors! I optimize websites for speed, performance, and 
+        desc: `A slow website costs you visitors! I optimize websites for speed, performance, and 
                 SEO to improve rankings and user experience. Let's boost your side's visibility 
                 and engagement.`
         
