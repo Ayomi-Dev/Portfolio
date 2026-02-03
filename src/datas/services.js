@@ -13,7 +13,7 @@ const services = [
         class: "service-card two",
         title: "E-Commerce Development",
         icon: "icon-shopping-cart bold",
-        desc: `Turn your business into an online success! I develop E-commerce platfirms that are secure, \n
+        desc: `Turn your business into an online success! I develop E-commerce platforms that are secure, \n
                 user-friendly, and optimised for sales. Let's build an online stire that keeps your customers coming back.`
     },
     {
