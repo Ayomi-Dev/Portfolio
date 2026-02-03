@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 #header .text {
@@ -84,9 +85,9 @@
 /* ===== TEXT REVEAL ANIMATION ===== */
 @keyframes backcolor{ 
     100%
-        { 
-            background-position: 0 0; 
-            background-repeat: no-repeat; 
-            color: transparent; 
-        }
+    { 
+        background-position: 0 0; 
+        background-repeat: no-repeat; 
+        color: transparent; 
+    }
 }

@@ -31,7 +31,6 @@
 //   { threshold: 0.2 }
 // );
 
-
 document.addEventListener("DOMContentLoaded", () => {
   const items = document.querySelectorAll("#header .text > *");
   const revealSpans = document.querySelectorAll(".name span, .role span");
@@ -100,46 +99,29 @@ const openTab = (tabName) => { //adding corresponding tab to their title
 
 
 // SCROLL REVEAL ANIMATION
+const scrollEle = document.querySelectorAll(".reveal > *")
+console.log(scrollEle)
 ScrollReveal({
     reset: true,
     distance: '100px',
-    duration: 1500,
+    duration: 3500,
     delay: 200
 
 });
-ScrollReveal().reveal(`.service`, { delay: 300, origin: "left"})
-
-
 ScrollReveal()
 .reveal(`
     .content1 .tab-titles, 
-    .col-2,
+    .content1 .about-title,
+    .col-2, .col-1,
+    .service-title,
     .service-content,
-    .project-content
+    .project-content,
+     #projects h1,
 `, 
     { 
-        delay: 100, 
+        delay: 200, 
         origin: 'bottom', 
     }
 );
-ScrollReveal()
-.reveal(`
-    .about-title,
-`,
-    { 
-        delay: 200, 
-        origin: 'right'
-    }
-);
-ScrollReveal()
-.reveal(`
-    .service-title, 
-    .col-1,
-    .content1 h1,
-    #projects h1,
-`, 
-    { 
-        delay: 300, 
-        origin: 'top' 
-    }
-);  
+
+ 
