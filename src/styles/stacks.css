@@ -4,8 +4,8 @@
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    transform: translateX(50px);
-    animation: swing 3s linear infinite;
+    transform: translateX(30px);
+    animation: swing 4s linear infinite;
     transition: transform 1.5s ease-in-out;
 }
 .stack-item{
@@ -24,11 +24,17 @@
     0%{
         transform: translateX(0px);
     }
+    25%{
+        transform: translateX(8px);
+    }
     50%{
-        transform: translateX(30px);
+        transform: translateX(16px);
+    }
+    75%{
+        transform: translateX(24px); 
     }
     100%{
-        transform: translateX(50px);
+        transform: translateX(30px);
 
     }
 }
