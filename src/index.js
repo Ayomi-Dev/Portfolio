@@ -99,8 +99,6 @@ const openTab = (tabName) => { //adding corresponding tab to their title
 
 
 // SCROLL REVEAL ANIMATION
-const scrollEle = document.querySelectorAll(".reveal > *")
-console.log(scrollEle)
 ScrollReveal({
     reset: true,
     distance: '100px',
