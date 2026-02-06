@@ -5,8 +5,8 @@ window.addEventListener('scroll', function() {
 
     for(let i=0; i < reveals.length; i++){ //looping through all the reveal element
         let windowHeight = window.innerHeight;
-        let revealTop = reveals[i].getBoundingClientRect().top;
-        let revealPoint = 100;
+        let revealTop = reveals[i].getBoundingClientRect().top;//getting the distance of the reveal element from the top of the viewport
+        let revealPoint = 100;//the point at which the reveal element will be revealed
 
         if(revealTop < windowHeight - revealPoint){
             reveals[i].classList.add('active');
@@ -18,19 +18,7 @@ window.addEventListener('scroll', function() {
 });
 
 
- // Revealing header text animation once page loads
-// const observer = new IntersectionObserver(//reveals all entries at once
-//   entries => {
-//     entries.forEach(entry => {
-//       if (entry.isIntersecting) {
-//         entry.target.classList.add("active");
-//         observer.unobserve(entry.target);
-//       }
-//     });
-//   },
-//   { threshold: 0.2 }
-// );
-
+//HEADER TEXTS ANIMATION FUNCTION
 document.addEventListener("DOMContentLoaded", () => {
   const items = document.querySelectorAll("#header .text > *");
   const revealSpans = document.querySelectorAll(".name span, .role span");
@@ -38,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const STAGGER = 1200; //time delay between each child element to reveal
   const TRANSITION_TIME = 100; //time for animation of spans to complete
 
-  requestAnimationFrame(() => {
+  requestAnimationFrame(() => {//ensures that the animation only runs after the initial page load
     items.forEach((el, index) => {
       setTimeout(() => {
         el.classList.add("active"); //adds the active class to each child element to reveal them one by one
@@ -61,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // ACTIVE NAVIGATION MENU
 let list = document.querySelectorAll('.link');
 
-function activeList() { //function to add active class on each nav link
+function activeList() { //adds active class on each nav link
     list.forEach((item) => {
         item.classList.remove('active');
         this.classList.add('active');
