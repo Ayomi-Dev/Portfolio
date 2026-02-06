@@ -102,7 +102,7 @@ const projects = [
 document.querySelector(".project-content").innerHTML = projects.map((project) => {
     return (
         `
-        <div class="project one">
+        <div class="project reveal">
             <img src=${project.image} alt="">
             <div class="project-layer-wrapper">
                 <div class="project-layer">

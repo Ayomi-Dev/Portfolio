@@ -1,7 +1,7 @@
 const services = [
     {
         id: 1,
-        class: "service-card one",
+        class: "service-card reveal",
         title: "Web Application Development (Frontend & Backend)",
         icon: "icon-code bold",
         desc: `Need a powerful web app? I specialize in developing scalable and high-performance \n
@@ -10,7 +10,7 @@ const services = [
     },
     {
         id: 2,
-        class: "service-card two",
+        class: "service-card reveal",
         title: "E-Commerce Development",
         icon: "icon-shopping-cart bold",
         desc: `Turn your business into an online success! I develop E-commerce platforms that are secure, \n
@@ -18,7 +18,7 @@ const services = [
     },
     {
         id: 3,
-        class: "service-card three",
+        class: "service-card reveal",
         title: "UI/UX Design Implementation",
         icon: "icon-mouse-square bold",
         desc: `Design meets functionality! I transform UI/UX designs into fast, interactive, and pixel-perfect 
@@ -27,7 +27,7 @@ const services = [
     {
         id: 4,
         title: "SEO And Performance Optimization",
-        class: "service-card four",
+        class: "service-card reveal",
         icon: "icon-search-status bold",
         desc: `A slow website costs you visitors! I optimize websites for speed, performance, and 
                 SEO to improve rankings and user experience. Let's boost your side's visibility 
