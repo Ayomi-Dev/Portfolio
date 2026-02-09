@@ -14,7 +14,7 @@ const services = [
         title: "E-Commerce Development",
         icon: "icon-shopping-cart bold",
         desc: `Turn your business into an online success! I develop E-commerce platforms that are secure, \n
-                user-friendly, and optimised for sales. Let's build an online stire that keeps your customers coming back.`
+                user-friendly, and optimised for sales. Let's build an online store that keeps your customers coming back.`
     },
     {
         id: 3,
